@@ -55,7 +55,7 @@ router.post("/register", async (req, res) => {
     const token = generateToken(value);
     res.json({
       success: true,
-      message: "Đăng ký thành công",
+      message: "Đăng ký tài khoản",
       token: token,
     });
   }
@@ -74,7 +74,7 @@ router.post("/login", async (req, res) => {
     }
     res.json({
       success: false,
-      message: "Đăng nhập thất bại",
+      message: "Đăng nhập",
       errors: errors,
     });
   } else {
@@ -85,14 +85,14 @@ router.post("/login", async (req, res) => {
       }
       res.json({
         success: false,
-        message: "Đăng nhập thất bại",
+        message: "Đăng nhập",
         errors: errors,
       });
     } else {
       const token = generateToken(user);
       res.json({
         success: true,
-        message: "Đăng nhập thành công",
+        message: "Đăng nhập",
         token: token,
       });
     }

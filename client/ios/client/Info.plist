@@ -36,7 +36,7 @@
 		</dict>
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string/>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
@@ -51,5 +51,22 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>PlusJakartaDisplay-Bold.otf</string>
+		<string>PlusJakartaDisplay-BoldItalic.otf</string>
+		<string>PlusJakartaDisplay-Italic.otf</string>
+		<string>PlusJakartaDisplay-Light.otf</string>
+		<string>PlusJakartaDisplay-LightItalic.otf</string>
+		<string>PlusJakartaDisplay-Medium.otf</string>
+		<string>PlusJakartaDisplay-MediumItalic.otf</string>
+		<string>PlusJakartaDisplay-Regular.otf</string>
+		<string>PlusJakartaText-Bold.otf</string>
+		<string>PlusJakartaText-BoldItalic.otf</string>
+		<string>PlusJakartaText-Italic.otf</string>
+		<string>PlusJakartaText-Light.otf</string>
+		<string>PlusJakartaText-LightItalic.otf</string>
+		<string>PlusJakartaText-Regular.otf</string>
+	</array>
 </dict>
 </plist>
