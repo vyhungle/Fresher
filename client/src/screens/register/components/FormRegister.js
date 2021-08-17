@@ -7,69 +7,80 @@ import {
   TouchableOpacity,
   ActivityIndicator,
 } from 'react-native';
-import {useNavigation} from '@react-navigation/native';
-import {Formik} from 'formik';
 import {appColor} from '../../../assets/colors';
+import {Formik} from 'formik';
+import {useNavigation} from '@react-navigation/native';
+import {KeyboardAvoidingView} from 'native-base';
 import {appFont} from '../../../assets/fonts';
 
-export default function FormLogin() {
+export default function FormSignUp() {
   const navigation = useNavigation();
   return (
-    <View style={styles.Container}>
-      <Formik
-        initialValues={{
-          username: '',
-          password: '',
-        }}
-        onSubmit={values => {
-          console.log(values);
-        }}>
-        {formProps => (
-          <View>
-            <Text style={styles.Lable}>Email</Text>
+    <Formik
+      initialValues={{
+        username: '',
+        password: '',
+        confirmPassword: '',
+        email: '',
+      }}
+      onSubmit={values => {
+        console.log(values);
+      }}>
+      {formProps => (
+        <KeyboardAvoidingView>
+          <View style={styles.Container}>
+            <Text style={styles.Lable}>Tài khoản</Text>
             <TextInput
               style={styles.Field}
               onChangeText={formProps.handleChange('username')}
               value={formProps.values.username}
             />
-            {/* {errors.username && (
-              <Text style={styles.Error}>{errors.username}</Text>
-            )} */}
-            <Text style={styles.Lable}>Mật khẩu</Text>
+            <Text style={styles.Lable}>Email</Text>
             <TextInput
               style={styles.Field}
               secureTextEntry={true}
+              onChangeText={formProps.handleChange('email')}
+              value={formProps.values.email}
+            />
+
+            <Text style={styles.Lable}>Mật khẩu</Text>
+            <TextInput
+              style={styles.Field}
               onChangeText={formProps.handleChange('password')}
               value={formProps.values.password}
             />
-            {/* {errors.password && (
-              <Text style={styles.Error}>{errors.password}</Text>
-            )} */}
-            <Text style={styles.TextForgot}>Quên mật khẩu?</Text>
+
+            <Text style={styles.Lable}>Nhập lại mật khẩu</Text>
+            <TextInput
+              style={styles.Field}
+              onChangeText={formProps.handleChange('confirmPassword')}
+              value={formProps.values.confirmPassword}
+            />
+
             <TouchableOpacity
               style={styles.ButtonLogin}
               onPress={() => formProps.handleSubmit()}>
-              <Text style={styles.TextButton}>Đăng Nhập</Text>
+              <Text style={styles.TextButton}>Đăng ký</Text>
             </TouchableOpacity>
-
             <View style={styles.BoxBottom}>
-              <Text style={styles.TextBottom}>Bạn không có tài khoản?</Text>
+              <Text style={styles.TextBottom}>Bạn đã có một tài khoản?</Text>
               <TouchableOpacity
                 style={styles.BoxTextSU}
-                onPress={() => navigation.navigate('RegisterScreen')}>
-                <Text style={styles.TextSignup}> Đăng ký</Text>
+                onPress={() => navigation.navigate('LoginScreen')}>
+                <Text style={styles.TextSignup}> Đăng nhập</Text>
               </TouchableOpacity>
             </View>
           </View>
-        )}
-      </Formik>
-    </View>
+        </KeyboardAvoidingView>
+      )}
+    </Formik>
   );
 }
 
 const styles = StyleSheet.create({
   Container: {
     paddingHorizontal: 20,
+    paddingBottom: 20,
   },
   Lable: {
     marginTop: 30,
@@ -87,7 +98,7 @@ const styles = StyleSheet.create({
     letterSpacing: 1.3,
     alignSelf: 'flex-end',
     marginTop: 15,
-    fontFamily: appFont.Bold,
+    fontFamily: appFont.Regular,
   },
   ButtonLogin: {
     backgroundColor: appColor.primary,
@@ -96,7 +107,7 @@ const styles = StyleSheet.create({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    marginTop: 40,
+    marginTop: 45,
   },
   TextButton: {
     color: 'white',
@@ -122,13 +133,13 @@ const styles = StyleSheet.create({
   },
   TextSignup: {
     letterSpacing: 1.5,
-    fontFamily: appFont.Bold,
+    fontFamily: appFont.Regular,
     fontSize: 14,
     color: appColor.primary,
   },
   Error: {
     letterSpacing: 1.5,
-    fontFamily: appFont.Bold,
+    fontFamily: appFont.Regular,
     fontSize: 14,
     color: '#ff3333',
     marginTop: 5,
