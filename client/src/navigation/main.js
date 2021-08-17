@@ -7,6 +7,8 @@ import {
 
 import {navigationRef} from './rootNavigation';
 import BottomTab from '../navigation/bottomTab';
+import LoginScreen from '../screens/login';
+import RegisterScreen from '../screens/register';
 
 export default function AppNavigator() {
   const RootStack = createStackNavigator();
@@ -18,6 +20,8 @@ export default function AppNavigator() {
           cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
         }}>
         <RootStack.Screen name="BottomTab" component={BottomTab} />
+        <RootStack.Screen name="LoginScreen" component={LoginScreen} />
+        <RootStack.Screen name="RegisterScreen" component={RegisterScreen} />
       </RootStack.Navigator>
     </NavigationContainer>
   );
