@@ -1,4 +1,5 @@
 export const appColor = {
-  primary: '#2F80ED',
-  hint: '#7A7A7A',
+  primary: '#047841',
+  hint: '#6A6A6A',
+  secondary: '#E0F43C',
 };

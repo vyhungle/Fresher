@@ -7,14 +7,15 @@ import HomeScreen from '../screens/home';
 import CallScreen from '../screens/call';
 import HistoricalScreen from '../screens/historical';
 import SettingScreen from '../screens/setting';
-import MessageIcon from '../assets/images/messageIcon.svg';
-import MessageIconFocused from '../assets/images/messageIconFocused.svg';
 import HistoryIcon from '../assets/images/historyIcon.svg';
 import HistoryIconFocused from '../assets/images/historyIconFocused.svg';
 import CallIcon from '../assets/images/callIcon.svg';
 import CallIconFocused from '../assets/images/callIconFocused.svg';
 import UserIcon from '../assets/images/userIcon.svg';
 import UserIconFocused from '../assets/images/userIconFocused.svg';
+
+import DashboardIcon from '../assets/images/dashboard.svg';
+import DashboardIconFocused from '../assets/images/dashboardFocused.svg';
 
 const Bottom = () => {
   const Tab = createBottomTabNavigator();
@@ -24,27 +25,27 @@ const Bottom = () => {
         tabBarIcon: ({focused}) => {
           if (route.name === 'HomeScreen') {
             return focused ? (
-              <MessageIconFocused width={30} height={30} />
+              <DashboardIconFocused width={25} height={25} />
             ) : (
-              <MessageIcon width={30} height={30} />
+              <DashboardIcon width={25} height={25} />
             );
           } else if (route.name === 'HistoricalScreen') {
             return focused ? (
-              <HistoryIconFocused width={30} height={30} />
+              <HistoryIconFocused width={25} height={25} />
             ) : (
-              <HistoryIcon width={30} height={30} />
+              <HistoryIcon width={25} height={25} />
             );
           } else if (route.name === 'CallScreen') {
             return focused ? (
-              <CallIconFocused width={30} height={30} />
+              <CallIconFocused width={25} height={25} />
             ) : (
-              <CallIcon width={30} height={30} />
+              <CallIcon width={25} height={25} />
             );
           } else if (route.name === 'SettingScreen') {
             return focused ? (
-              <UserIconFocused width={30} height={30} />
+              <UserIconFocused width={25} height={25} />
             ) : (
-              <UserIcon width={30} height={30} />
+              <UserIcon width={25} height={25} />
             );
           }
         },
