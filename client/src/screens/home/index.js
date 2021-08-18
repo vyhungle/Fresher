@@ -1,16 +1,22 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
+import {appColor} from '../../assets/colors';
 import CatalogMain from '../../components/CatalogMain';
 import TopBarMain from '../../components/TopBarMain';
+import ListCardCategory from './components/ListCardCatagory';
 
 export default function index() {
   return (
-    <View>
+    <View style={styles.Container}>
       <TopBarMain />
       <CatalogMain />
-      <Text>Home</Text>
+      <ListCardCategory />
     </View>
   );
 }
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  Container: {
+    // backgroundColor: appColor.bg,
+  },
+});

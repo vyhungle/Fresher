@@ -6,7 +6,7 @@ import {appFont} from '../assets/fonts';
 export default function SingleCatalog(props) {
   return (
     <TouchableOpacity style={styles.Container}>
-      <Text style={styles.TextBody}>Sữa tươi các loại</Text>
+      <Text style={styles.TextBody}>{props.category.name}</Text>
     </TouchableOpacity>
   );
 }
@@ -21,6 +21,7 @@ const styles = StyleSheet.create({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    marginLeft: 5,
   },
   TextBody: {
     fontFamily: appFont.Medium,
