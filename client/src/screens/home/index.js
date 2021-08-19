@@ -3,14 +3,14 @@ import {StyleSheet, Text, View} from 'react-native';
 import {appColor} from '../../assets/colors';
 import CatalogMain from '../../components/CatalogMain';
 import TopBarMain from '../../components/TopBarMain';
-import ListCardCategory from './components/ListCardCatagory';
+import ListProductCategories from './components/ListProductCategories';
 
 export default function index() {
   return (
     <View style={styles.Container}>
       <TopBarMain />
       <CatalogMain />
-      <ListCardCategory />
+      <ListProductCategories />
     </View>
   );
 }

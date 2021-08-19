@@ -2,6 +2,7 @@ import {createSlice} from '@reduxjs/toolkit';
 
 const initialState = {
   isLoading: true,
+  isPage: [],
   listProducts: [],
 };
 
@@ -14,24 +15,37 @@ const productsSlice = createSlice({
     },
     productSuccess: (state, {payload}) => {
       state.isLoading = false;
-      // state.listProducts = payload.products;
       const isList = state.listProducts.some(x => x.id === payload.res.id);
-      console.log(isList);
       if (!isList) {
         state.listProducts.push(payload.res);
       }
-      // else {
-      //   const index = state.listProducts.findIndex(x => x.id === payload.id);
-      //   const isProducts = state.listProducts[index].some(
-      //     x => x.id === payload.products[0].id,
-      //   );
-      //   if (!isProducts) {
-      //     state.listProducts[index].products.concat(payload.res.products);
-      //   }
-      // }
+    },
+
+    pagePending: (state, {payload}) => {
+      const index = state.isPage.findIndex(x => x.id === payload.id);
+      if (index === -1) {
+        state.isPage.push({id: payload.id, isLoading: true});
+      } else {
+        state.isPage[index].isLoading = true;
+      }
+    },
+    pageSuccess: (state, {payload}) => {
+      const indexPage = state.isPage.findIndex(x => x.id === payload.res.id);
+      state.isPage[indexPage].isLoading = false;
+
+      const index = state.listProducts.findIndex(x => x.id === payload.res.id);
+      if (index >= 0) {
+        if (state.listProducts[index].page !== payload.res.page) {
+          state.listProducts[index].products = state.listProducts[
+            index
+          ].products.concat(payload.res.products);
+          state.listProducts[index].page = payload.res.page;
+        }
+      }
     },
   },
 });
 
-export const {productPending, productSuccess} = productsSlice.actions;
+export const {productPending, productSuccess, pagePending, pageSuccess} =
+  productsSlice.actions;
 export default productsSlice.reducer;

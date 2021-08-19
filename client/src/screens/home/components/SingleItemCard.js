@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, Text, View, Image} from 'react-native';
+import {StyleSheet, Text, View, Image, TouchableOpacity} from 'react-native';
 import {constantsGlobal} from '../../../api/constants';
 import {appColor} from '../../../assets/colors';
 import {appFont} from '../../../assets/fonts';
@@ -7,7 +7,7 @@ import {moneyFormat} from '../../../utils/format';
 
 export default function SingleItemCard({product}) {
   return (
-    <View style={styles.Container}>
+    <TouchableOpacity style={styles.Container}>
       <View style={styles.HSDBox}>
         <Text style={styles.HSDText}>{product.hsd}</Text>
       </View>
@@ -24,8 +24,12 @@ export default function SingleItemCard({product}) {
           {moneyFormat(product.unit.detail[0].price)}
           <Text style={styles.UnitText}>đ</Text>
         </Text>
+
+        <TouchableOpacity style={styles.BuyBox}>
+          <Text style={styles.BuyText}>MUA</Text>
+        </TouchableOpacity>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 }
 
@@ -35,7 +39,7 @@ const styles = StyleSheet.create({
     height: constantsGlobal.heightCard,
     backgroundColor: 'white',
     borderRadius: 10,
-    margin: 2.5,
+    margin: 3,
     overflow: 'hidden',
     borderWidth: 1,
     borderColor: appColor.border,
@@ -85,5 +89,19 @@ const styles = StyleSheet.create({
   },
   UnitText: {
     textDecorationLine: 'underline',
+  },
+
+  BuyBox: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderLeftColor: appColor.border,
+    borderLeftWidth: 1,
+    marginLeft: 5,
+    paddingLeft: 5,
+  },
+  BuyText: {
+    fontSize: 13,
+    fontFamily: appFont.Medium,
   },
 });

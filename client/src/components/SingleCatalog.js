@@ -13,6 +13,7 @@ export default function SingleCatalog(props) {
 
 const styles = StyleSheet.create({
   Container: {
+    backgroundColor: 'white',
     height: 50,
     width: 70,
     borderWidth: 0.7,

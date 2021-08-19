@@ -15,6 +15,7 @@ export default function CatalogMain() {
       renderItem={item => <SingleCatalog category={item.item} />}
       contentContainerStyle={{paddingVertical: 5}}
       // pagingEnabled={true}
+      style={{height: 70}}
     />
   );
 }
