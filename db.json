@@ -621,6 +621,852 @@
       },
       "subCategoryId": 9,
       "categoryId": 3
+    },
+
+    {
+      "id": 20,
+      "name": "Cá hồi xốt Teriyaki Meiwa hộp 310g",
+      "images": [
+        "https://cdn.tgdd.vn/Products/Images/7259/244661/bhx/ca-hoi-xot-teriyaki-meiwa-hop-310g-202107151412365039.jpg",
+        "https://cdn.tgdd.vn/Products/Images/7259/244661/bhx/ca-hoi-xot-teriyaki-meiwa-hop-310g-202107151412371602.jpg",
+        "https://cdn.tgdd.vn/Products/Images/7259/244661/bhx/ca-hoi-xot-teriyaki-meiwa-hop-310g-202107151412376510.jpg",
+        "https://cdn.tgdd.vn/Products/Images/7259/244661/bhx/ca-hoi-xot-teriyaki-meiwa-hop-310g-202107151412382702.jpg",
+        "https://cdn.tgdd.vn/Products/Images/7259/244661/bhx/ca-hoi-xot-teriyaki-meiwa-hop-310g-202107151412389594.jpg",
+        "https://cdn.tgdd.vn/Products/Images/7259/244661/bhx/ca-hoi-xot-teriyaki-meiwa-hop-310g-202107151412399301.jpg"
+      ],
+      "detail": "Với nguyên liệu cá hồi Nhật cùng nước xốt Teriyakki đặc trựng của xứ Phù Tang. Cá hồi xốt Teriyaki Meiwa 310g đến từ thương hiệu thực phẩm Meiwa mang đến hương vị đặc trưng của Nhật Bản được xem là loại thực phẩm làm sẵn tiện lợi và cung cấp nguồn năng lượng dồi dào.",
+      "hsd": "HSD còn 1 năm",
+      "unit": {
+        "many": false,
+        "detail": [
+          {
+            "id": 1,
+            "name": "hộp 310g",
+            "price": 120000,
+            "image": "https://cdn.tgdd.vn/Products/Images/7259/244661/bhx/ca-hoi-xot-teriyaki-meiwa-hop-310g-202107151412399301.jpg"
+          }
+        ]
+      },
+      "subCategoryId": 1,
+      "categoryId": 4
+    },
+    {
+      "id": 21,
+      "name": "Ba khía muối Nhất Tâm hũ 400g",
+      "images": [
+        "https://cdn.tgdd.vn/Products/Images/7259/247201/bhx/ba-khia-muoi-nhat-tam-hu-400g-202108161723222955.jpg",
+        "https://cdn.tgdd.vn/Products/Images/7259/247201/bhx/ba-khia-muoi-nhat-tam-hu-400g-202108161723227486.jpg",
+        "https://cdn.tgdd.vn/Products/Images/7259/247201/bhx/ba-khia-muoi-nhat-tam-hu-400g-202108161723233509.jpg",
+        "https://cdn.tgdd.vn/Products/Images/7259/247201/bhx/ba-khia-muoi-nhat-tam-hu-400g-202108161723238933.jpg",
+        "https://cdn.tgdd.vn/Products/Images/7259/247201/bhx/ba-khia-muoi-nhat-tam-hu-400g-202108161723243693.jpg"
+      ],
+      "detail": "Là loại thực phẩm ăn liền vô cùng thơm ngon và tiện lợi đến từ thương hiệu thực phẩm Nhất Tâm quen thuộc. Ba khía muối Nhất Tâm hũ 400g mang đến hương vị miền quê dân dã, mộc mạc nhưng lại kích thích vị giác và mang đến giá trị dinh dưỡng cao cho bữa ăn của mỗi gia đình.",
+      "hsd": "HSD còn 5 tháng",
+      "unit": {
+        "many": false,
+        "detail": [
+          {
+            "id": 1,
+            "name": "hũ 400g",
+            "price": 111000,
+            "image": "https://cdn.tgdd.vn/Products/Images/7259/247201/bhx/ba-khia-muoi-nhat-tam-hu-400g-202108161723222955.jpg"
+          }
+        ]
+      },
+      "subCategoryId": 1,
+      "categoryId": 4
+    },
+    {
+      "id": 22,
+      "name": "Thịt gà kho sả ớt khay 390g",
+      "images": [
+        "https://cdn.tgdd.vn/Products/Images/8791/238286/bhx/thit-ga-kho-sa-ot-khay-390g-202107011131133251.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8791/238286/bhx/thit-ga-kho-sa-ot-khay-390g-202107011131136376.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8791/238286/bhx/thit-ga-kho-sa-ot-khay-390g-202107011131140014.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8791/238286/bhx/thit-ga-kho-sa-ot-khay-390g-202107011131143452.jpg"
+      ],
+      "detail": "Thịt gà kho sả ớt được đóng khay sạch sẽ - đảm bảo vệ sinh an toàn thực phẩm. Sản phẩm đã có đầy đủ nguyên liệu tươi, được đóng gói riêng biệt, dễ dàng gia giảm nguyên liệu theo khẩu vị riêng. Phục vụ tốt cho gia đình bạn có món ngon trọn dinh dưỡng",
+      "hsd": "HSD còn 4 tháng",
+      "unit": {
+        "many": false,
+        "detail": [
+          {
+            "id": 1,
+            "name": "khay 390g",
+            "price": 42000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8791/238286/bhx/thit-ga-kho-sa-ot-khay-390g-202107011131133251.jpg"
+          }
+        ]
+      },
+      "subCategoryId": 2,
+      "categoryId": 4
+    },
+    {
+      "id": 23,
+      "name": "Cá một nắng Basamaster gói 500g",
+      "images": [
+        "https://cdn.tgdd.vn/Products/Images/7259/244901/bhx/ca-mot-nang-basamaster-goi-500g-202107051003094082.jpg",
+        "https://cdn.tgdd.vn/Products/Images/7259/244901/bhx/ca-mot-nang-basamaster-goi-500g-202108091052599981.jpg"
+      ],
+      "detail": "với thịt cá săn chắc tạo nên miếng khô cá đẹp và lóng lánh, hấp dẫn. Cá một nắng Basamaster gói 500g là loại thực phẩm làm sẵn cao cấp của thương hiệu thực phẩm Basamaster, đáp ứng cả các tiêu chuẩn quản lý chất lượng quốc tế và giúp người dùng chế biến nhanh chóng nhưng cung cấp đầy đủ dinh dưỡng.",
+      "hsd": "HSD còn 8 tháng",
+      "unit": {
+        "many": false,
+        "detail": [
+          {
+            "id": 1,
+            "name": "gói 500g",
+            "price": 132000,
+            "image": "https://cdn.tgdd.vn/Products/Images/7259/244901/bhx/ca-mot-nang-basamaster-goi-500g-202108091052599981.jpg"
+          }
+        ]
+      },
+      "subCategoryId": 1,
+      "categoryId": 4
+    },
+    {
+      "id": 24,
+      "name": "Cá hồi xốt Teriyaki Meiwa hộp 310g",
+      "images": [
+        "https://cdn.tgdd.vn/Products/Images/7259/244661/bhx/ca-hoi-xot-teriyaki-meiwa-hop-310g-202107151412365039.jpg",
+        "https://cdn.tgdd.vn/Products/Images/7259/244661/bhx/ca-hoi-xot-teriyaki-meiwa-hop-310g-202107151412371602.jpg",
+        "https://cdn.tgdd.vn/Products/Images/7259/244661/bhx/ca-hoi-xot-teriyaki-meiwa-hop-310g-202107151412376510.jpg",
+        "https://cdn.tgdd.vn/Products/Images/7259/244661/bhx/ca-hoi-xot-teriyaki-meiwa-hop-310g-202107151412382702.jpg",
+        "https://cdn.tgdd.vn/Products/Images/7259/244661/bhx/ca-hoi-xot-teriyaki-meiwa-hop-310g-202107151412389594.jpg",
+        "https://cdn.tgdd.vn/Products/Images/7259/244661/bhx/ca-hoi-xot-teriyaki-meiwa-hop-310g-202107151412399301.jpg"
+      ],
+      "detail": "Với nguyên liệu cá hồi Nhật cùng nước xốt Teriyakki đặc trựng của xứ Phù Tang. Cá hồi xốt Teriyaki Meiwa 310g đến từ thương hiệu thực phẩm Meiwa mang đến hương vị đặc trưng của Nhật Bản được xem là loại thực phẩm làm sẵn tiện lợi và cung cấp nguồn năng lượng dồi dào.",
+      "hsd": "HSD còn 1 năm",
+      "unit": {
+        "many": false,
+        "detail": [
+          {
+            "id": 1,
+            "name": "hộp 310g",
+            "price": 120000,
+            "image": "https://cdn.tgdd.vn/Products/Images/7259/244661/bhx/ca-hoi-xot-teriyaki-meiwa-hop-310g-202107151412399301.jpg"
+          }
+        ]
+      },
+      "subCategoryId": 1,
+      "categoryId": 4
+    },
+    {
+      "id": 25,
+      "name": "Ba khía muối Nhất Tâm hũ 400g",
+      "images": [
+        "https://cdn.tgdd.vn/Products/Images/7259/247201/bhx/ba-khia-muoi-nhat-tam-hu-400g-202108161723222955.jpg",
+        "https://cdn.tgdd.vn/Products/Images/7259/247201/bhx/ba-khia-muoi-nhat-tam-hu-400g-202108161723227486.jpg",
+        "https://cdn.tgdd.vn/Products/Images/7259/247201/bhx/ba-khia-muoi-nhat-tam-hu-400g-202108161723233509.jpg",
+        "https://cdn.tgdd.vn/Products/Images/7259/247201/bhx/ba-khia-muoi-nhat-tam-hu-400g-202108161723238933.jpg",
+        "https://cdn.tgdd.vn/Products/Images/7259/247201/bhx/ba-khia-muoi-nhat-tam-hu-400g-202108161723243693.jpg"
+      ],
+      "detail": "Là loại thực phẩm ăn liền vô cùng thơm ngon và tiện lợi đến từ thương hiệu thực phẩm Nhất Tâm quen thuộc. Ba khía muối Nhất Tâm hũ 400g mang đến hương vị miền quê dân dã, mộc mạc nhưng lại kích thích vị giác và mang đến giá trị dinh dưỡng cao cho bữa ăn của mỗi gia đình.",
+      "hsd": "HSD còn 5 tháng",
+      "unit": {
+        "many": false,
+        "detail": [
+          {
+            "id": 1,
+            "name": "hũ 400g",
+            "price": 111000,
+            "image": "https://cdn.tgdd.vn/Products/Images/7259/247201/bhx/ba-khia-muoi-nhat-tam-hu-400g-202108161723222955.jpg"
+          }
+        ]
+      },
+      "subCategoryId": 1,
+      "categoryId": 4
+    },
+    {
+      "id": 26,
+      "name": "Thịt gà kho sả ớt khay 390g",
+      "images": [
+        "https://cdn.tgdd.vn/Products/Images/8791/238286/bhx/thit-ga-kho-sa-ot-khay-390g-202107011131133251.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8791/238286/bhx/thit-ga-kho-sa-ot-khay-390g-202107011131136376.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8791/238286/bhx/thit-ga-kho-sa-ot-khay-390g-202107011131140014.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8791/238286/bhx/thit-ga-kho-sa-ot-khay-390g-202107011131143452.jpg"
+      ],
+      "detail": "Thịt gà kho sả ớt được đóng khay sạch sẽ - đảm bảo vệ sinh an toàn thực phẩm. Sản phẩm đã có đầy đủ nguyên liệu tươi, được đóng gói riêng biệt, dễ dàng gia giảm nguyên liệu theo khẩu vị riêng. Phục vụ tốt cho gia đình bạn có món ngon trọn dinh dưỡng",
+      "hsd": "HSD còn 4 tháng",
+      "unit": {
+        "many": false,
+        "detail": [
+          {
+            "id": 1,
+            "name": "khay 390g",
+            "price": 42000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8791/238286/bhx/thit-ga-kho-sa-ot-khay-390g-202107011131133251.jpg"
+          }
+        ]
+      },
+      "subCategoryId": 2,
+      "categoryId": 4
+    },
+
+    {
+      "id": 27,
+      "name": "Thùng 24 chai hồng trà vải C2 455ml",
+      "images": [
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-vai-c2-455ml-202103290344521951.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-c2-vi-vai-455ml-202006271227569343.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-c2-vi-vai-455ml-202006271227573676.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-c2-vi-vai-455ml-202006271227577318.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-c2-vi-vai-455ml-202006271227581371.jpg"
+      ],
+      "detail": "Được làm từ lá trà lên men tự nhiên kết hợp cùng quả vải mang đến cho bạn một hương vị trà vải sảng khoái, giải khát tột đỉnh. Trong trà có chứa nhiều chất chống oxy hóa giúp bạn luôn năng động, tỉnh táo và khỏe khoắn suốt ngày dài.",
+      "hsd": "HSD còn 9 tháng",
+      "unit": {
+        "many": true,
+        "detail": [
+          {
+            "id": 1,
+            "name": "1 chai",
+            "price": 9300,
+            "image": "https://cdn.tgdd.vn/Products/Images/8938/224672/bhx/hong-tra-vai-c2-455ml-202103271633286989_300x300.jpg"
+          },
+          {
+            "id": 2,
+            "name": "6 chai",
+            "price": 35000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8938/224673/bhx/6-chai-hong-tra-vai-c2-455ml-202103290345081245_300x300.jpg"
+          },
+          {
+            "id": 3,
+            "name": "Thùng 24 chai",
+            "price": 160000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-vai-c2-455ml-202103290344393925_300x300.jpg"
+          }
+        ]
+      },
+      "subCategoryId": 3,
+      "categoryId": 5
+    },
+    {
+      "id": 28,
+      "name": "Thùng 24 chai hồng trà vải C2 455ml",
+      "images": [
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-vai-c2-455ml-202103290344521951.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-c2-vi-vai-455ml-202006271227569343.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-c2-vi-vai-455ml-202006271227573676.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-c2-vi-vai-455ml-202006271227577318.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-c2-vi-vai-455ml-202006271227581371.jpg"
+      ],
+      "detail": "Được làm từ lá trà lên men tự nhiên kết hợp cùng quả vải mang đến cho bạn một hương vị trà vải sảng khoái, giải khát tột đỉnh. Trong trà có chứa nhiều chất chống oxy hóa giúp bạn luôn năng động, tỉnh táo và khỏe khoắn suốt ngày dài.",
+      "hsd": "HSD còn 9 tháng",
+      "unit": {
+        "many": true,
+        "detail": [
+          {
+            "id": 1,
+            "name": "1 chai",
+            "price": 9300,
+            "image": "https://cdn.tgdd.vn/Products/Images/8938/224672/bhx/hong-tra-vai-c2-455ml-202103271633286989_300x300.jpg"
+          },
+          {
+            "id": 2,
+            "name": "6 chai",
+            "price": 35000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8938/224673/bhx/6-chai-hong-tra-vai-c2-455ml-202103290345081245_300x300.jpg"
+          },
+          {
+            "id": 3,
+            "name": "Thùng 24 chai",
+            "price": 160000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-vai-c2-455ml-202103290344393925_300x300.jpg"
+          }
+        ]
+      },
+      "subCategoryId": 3,
+      "categoryId": 5
+    },
+
+    {
+      "id": 29,
+      "name": "Thùng 48 hộp sữa tươi tiệt trùng có đường Dutch Lady 180ml",
+      "images": [
+        "https://cdn.tgdd.vn/Products/Images/2386/86175/bhx/thung-48-hop-sua-tuoi-tiet-trung-co-duong-dutch-lady-180ml-202106300953407465.jpeg",
+        "https://cdn.tgdd.vn/Products/Images/2386/86175/bhx/thung-48-hop-sua-tuoi-tiet-trung-co-duong-dutch-lady-180ml-202106291141172895.jpg",
+        "https://cdn.tgdd.vn/Products/Images/2386/86175/bhx/thung-48-hop-sua-tuoi-tiet-trung-co-duong-dutch-lady-180ml-202106291141179305.jpg",
+        "https://cdn.tgdd.vn/Products/Images/2386/86175/bhx/thung-48-hop-sua-tuoi-tiet-trung-co-duong-dutch-lady-180ml-202106291141182425.jpg",
+        "https://cdn.tgdd.vn/Products/Images/2386/86175/bhx/thung-48-hop-sua-tuoi-tiet-trung-co-duong-dutch-lady-180ml-202106291141184665.jpg",
+        "https://cdn.tgdd.vn/Products/Images/2386/86175/bhx/thung-48-hop-sua-tuoi-tiet-trung-co-duong-dutch-lady-180ml-202106291141187575.jpg"
+      ],
+      "detail": "Sữa Dutch Lady với hương vị thơm ngon bởi từng giọt sữa bò tươi ngon và đường tinh luyện, sản phẩm dễ uống, đầy dinh dưỡng, đóng gói hộp nhỏ tiện dụng. Thùng 48 hộp sữa tươi tiệt trùng có đường Dutch Lady 180ml là sản phẩm yêu thích của các bé",
+      "hsd": "HSD còn 45 ngày",
+      "unit": {
+        "many": true,
+        "detail": [
+          {
+            "id": 1,
+            "name": "4 hộp",
+            "price": 28000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8938/224672/bhx/hong-tra-vai-c2-455ml-202103271633286989_300x300.jpg"
+          },
+          {
+            "id": 2,
+            "name": "Thùng 48 hộp",
+            "price": 320000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2386/86175/bhx/thung-48-hop-sua-tuoi-tiet-trung-co-duong-dutch-lady-180ml-202106291158384545_300x300.jpg"
+          }
+        ]
+      },
+      "subCategoryId": 9,
+      "categoryId": 5
+    },
+
+    {
+      "id": 30,
+      "name": "Thùng 24 chai hồng trà vải C2 455ml",
+      "images": [
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-vai-c2-455ml-202103290344521951.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-c2-vi-vai-455ml-202006271227569343.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-c2-vi-vai-455ml-202006271227573676.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-c2-vi-vai-455ml-202006271227577318.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-c2-vi-vai-455ml-202006271227581371.jpg"
+      ],
+      "detail": "Được làm từ lá trà lên men tự nhiên kết hợp cùng quả vải mang đến cho bạn một hương vị trà vải sảng khoái, giải khát tột đỉnh. Trong trà có chứa nhiều chất chống oxy hóa giúp bạn luôn năng động, tỉnh táo và khỏe khoắn suốt ngày dài.",
+      "hsd": "HSD còn 9 tháng",
+      "unit": {
+        "many": true,
+        "detail": [
+          {
+            "id": 1,
+            "name": "1 chai",
+            "price": 9300,
+            "image": "https://cdn.tgdd.vn/Products/Images/8938/224672/bhx/hong-tra-vai-c2-455ml-202103271633286989_300x300.jpg"
+          },
+          {
+            "id": 2,
+            "name": "6 chai",
+            "price": 35000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8938/224673/bhx/6-chai-hong-tra-vai-c2-455ml-202103290345081245_300x300.jpg"
+          },
+          {
+            "id": 3,
+            "name": "Thùng 24 chai",
+            "price": 160000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-vai-c2-455ml-202103290344393925_300x300.jpg"
+          }
+        ]
+      },
+      "subCategoryId": 3,
+      "categoryId": 6
+    },
+    {
+      "id": 30,
+      "name": "Thùng 24 chai hồng trà vải C2 455ml",
+      "images": [
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-vai-c2-455ml-202103290344521951.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-c2-vi-vai-455ml-202006271227569343.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-c2-vi-vai-455ml-202006271227573676.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-c2-vi-vai-455ml-202006271227577318.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-c2-vi-vai-455ml-202006271227581371.jpg"
+      ],
+      "detail": "Được làm từ lá trà lên men tự nhiên kết hợp cùng quả vải mang đến cho bạn một hương vị trà vải sảng khoái, giải khát tột đỉnh. Trong trà có chứa nhiều chất chống oxy hóa giúp bạn luôn năng động, tỉnh táo và khỏe khoắn suốt ngày dài.",
+      "hsd": "HSD còn 9 tháng",
+      "unit": {
+        "many": true,
+        "detail": [
+          {
+            "id": 1,
+            "name": "1 chai",
+            "price": 9300,
+            "image": "https://cdn.tgdd.vn/Products/Images/8938/224672/bhx/hong-tra-vai-c2-455ml-202103271633286989_300x300.jpg"
+          },
+          {
+            "id": 2,
+            "name": "6 chai",
+            "price": 35000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8938/224673/bhx/6-chai-hong-tra-vai-c2-455ml-202103290345081245_300x300.jpg"
+          },
+          {
+            "id": 3,
+            "name": "Thùng 24 chai",
+            "price": 160000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-vai-c2-455ml-202103290344393925_300x300.jpg"
+          }
+        ]
+      },
+      "subCategoryId": 3,
+      "categoryId": 6
+    },
+
+    {
+      "id": 30,
+      "name": "Thùng 48 hộp sữa tươi tiệt trùng có đường Dutch Lady 180ml",
+      "images": [
+        "https://cdn.tgdd.vn/Products/Images/2386/86175/bhx/thung-48-hop-sua-tuoi-tiet-trung-co-duong-dutch-lady-180ml-202106300953407465.jpeg",
+        "https://cdn.tgdd.vn/Products/Images/2386/86175/bhx/thung-48-hop-sua-tuoi-tiet-trung-co-duong-dutch-lady-180ml-202106291141172895.jpg",
+        "https://cdn.tgdd.vn/Products/Images/2386/86175/bhx/thung-48-hop-sua-tuoi-tiet-trung-co-duong-dutch-lady-180ml-202106291141179305.jpg",
+        "https://cdn.tgdd.vn/Products/Images/2386/86175/bhx/thung-48-hop-sua-tuoi-tiet-trung-co-duong-dutch-lady-180ml-202106291141182425.jpg",
+        "https://cdn.tgdd.vn/Products/Images/2386/86175/bhx/thung-48-hop-sua-tuoi-tiet-trung-co-duong-dutch-lady-180ml-202106291141184665.jpg",
+        "https://cdn.tgdd.vn/Products/Images/2386/86175/bhx/thung-48-hop-sua-tuoi-tiet-trung-co-duong-dutch-lady-180ml-202106291141187575.jpg"
+      ],
+      "detail": "Sữa Dutch Lady với hương vị thơm ngon bởi từng giọt sữa bò tươi ngon và đường tinh luyện, sản phẩm dễ uống, đầy dinh dưỡng, đóng gói hộp nhỏ tiện dụng. Thùng 48 hộp sữa tươi tiệt trùng có đường Dutch Lady 180ml là sản phẩm yêu thích của các bé",
+      "hsd": "HSD còn 45 ngày",
+      "unit": {
+        "many": true,
+        "detail": [
+          {
+            "id": 1,
+            "name": "4 hộp",
+            "price": 28000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8938/224672/bhx/hong-tra-vai-c2-455ml-202103271633286989_300x300.jpg"
+          },
+          {
+            "id": 2,
+            "name": "Thùng 48 hộp",
+            "price": 320000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2386/86175/bhx/thung-48-hop-sua-tuoi-tiet-trung-co-duong-dutch-lady-180ml-202106291158384545_300x300.jpg"
+          }
+        ]
+      },
+      "subCategoryId": 9,
+      "categoryId": 6
+    },
+
+    {
+      "id": 31,
+      "name": "Thùng 24 chai hồng trà vải C2 455ml",
+      "images": [
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-vai-c2-455ml-202103290344521951.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-c2-vi-vai-455ml-202006271227569343.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-c2-vi-vai-455ml-202006271227573676.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-c2-vi-vai-455ml-202006271227577318.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-c2-vi-vai-455ml-202006271227581371.jpg"
+      ],
+      "detail": "Được làm từ lá trà lên men tự nhiên kết hợp cùng quả vải mang đến cho bạn một hương vị trà vải sảng khoái, giải khát tột đỉnh. Trong trà có chứa nhiều chất chống oxy hóa giúp bạn luôn năng động, tỉnh táo và khỏe khoắn suốt ngày dài.",
+      "hsd": "HSD còn 9 tháng",
+      "unit": {
+        "many": true,
+        "detail": [
+          {
+            "id": 1,
+            "name": "1 chai",
+            "price": 9300,
+            "image": "https://cdn.tgdd.vn/Products/Images/8938/224672/bhx/hong-tra-vai-c2-455ml-202103271633286989_300x300.jpg"
+          },
+          {
+            "id": 2,
+            "name": "6 chai",
+            "price": 35000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8938/224673/bhx/6-chai-hong-tra-vai-c2-455ml-202103290345081245_300x300.jpg"
+          },
+          {
+            "id": 3,
+            "name": "Thùng 24 chai",
+            "price": 160000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-vai-c2-455ml-202103290344393925_300x300.jpg"
+          }
+        ]
+      },
+      "subCategoryId": 3,
+      "categoryId": 7
+    },
+    {
+      "id": 32,
+      "name": "Thùng 24 chai hồng trà vải C2 455ml",
+      "images": [
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-vai-c2-455ml-202103290344521951.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-c2-vi-vai-455ml-202006271227569343.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-c2-vi-vai-455ml-202006271227573676.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-c2-vi-vai-455ml-202006271227577318.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-c2-vi-vai-455ml-202006271227581371.jpg"
+      ],
+      "detail": "Được làm từ lá trà lên men tự nhiên kết hợp cùng quả vải mang đến cho bạn một hương vị trà vải sảng khoái, giải khát tột đỉnh. Trong trà có chứa nhiều chất chống oxy hóa giúp bạn luôn năng động, tỉnh táo và khỏe khoắn suốt ngày dài.",
+      "hsd": "HSD còn 9 tháng",
+      "unit": {
+        "many": true,
+        "detail": [
+          {
+            "id": 1,
+            "name": "1 chai",
+            "price": 9300,
+            "image": "https://cdn.tgdd.vn/Products/Images/8938/224672/bhx/hong-tra-vai-c2-455ml-202103271633286989_300x300.jpg"
+          },
+          {
+            "id": 2,
+            "name": "6 chai",
+            "price": 35000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8938/224673/bhx/6-chai-hong-tra-vai-c2-455ml-202103290345081245_300x300.jpg"
+          },
+          {
+            "id": 3,
+            "name": "Thùng 24 chai",
+            "price": 160000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-vai-c2-455ml-202103290344393925_300x300.jpg"
+          }
+        ]
+      },
+      "subCategoryId": 3,
+      "categoryId": 7
+    },
+
+    {
+      "id": 33,
+      "name": "Thùng 48 hộp sữa tươi tiệt trùng có đường Dutch Lady 180ml",
+      "images": [
+        "https://cdn.tgdd.vn/Products/Images/2386/86175/bhx/thung-48-hop-sua-tuoi-tiet-trung-co-duong-dutch-lady-180ml-202106300953407465.jpeg",
+        "https://cdn.tgdd.vn/Products/Images/2386/86175/bhx/thung-48-hop-sua-tuoi-tiet-trung-co-duong-dutch-lady-180ml-202106291141172895.jpg",
+        "https://cdn.tgdd.vn/Products/Images/2386/86175/bhx/thung-48-hop-sua-tuoi-tiet-trung-co-duong-dutch-lady-180ml-202106291141179305.jpg",
+        "https://cdn.tgdd.vn/Products/Images/2386/86175/bhx/thung-48-hop-sua-tuoi-tiet-trung-co-duong-dutch-lady-180ml-202106291141182425.jpg",
+        "https://cdn.tgdd.vn/Products/Images/2386/86175/bhx/thung-48-hop-sua-tuoi-tiet-trung-co-duong-dutch-lady-180ml-202106291141184665.jpg",
+        "https://cdn.tgdd.vn/Products/Images/2386/86175/bhx/thung-48-hop-sua-tuoi-tiet-trung-co-duong-dutch-lady-180ml-202106291141187575.jpg"
+      ],
+      "detail": "Sữa Dutch Lady với hương vị thơm ngon bởi từng giọt sữa bò tươi ngon và đường tinh luyện, sản phẩm dễ uống, đầy dinh dưỡng, đóng gói hộp nhỏ tiện dụng. Thùng 48 hộp sữa tươi tiệt trùng có đường Dutch Lady 180ml là sản phẩm yêu thích của các bé",
+      "hsd": "HSD còn 45 ngày",
+      "unit": {
+        "many": true,
+        "detail": [
+          {
+            "id": 1,
+            "name": "4 hộp",
+            "price": 28000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8938/224672/bhx/hong-tra-vai-c2-455ml-202103271633286989_300x300.jpg"
+          },
+          {
+            "id": 2,
+            "name": "Thùng 48 hộp",
+            "price": 320000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2386/86175/bhx/thung-48-hop-sua-tuoi-tiet-trung-co-duong-dutch-lady-180ml-202106291158384545_300x300.jpg"
+          }
+        ]
+      },
+      "subCategoryId": 9,
+      "categoryId": 7
+    },
+
+    {
+      "id": 34,
+      "name": "Thùng 24 chai hồng trà vải C2 455ml",
+      "images": [
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-vai-c2-455ml-202103290344521951.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-c2-vi-vai-455ml-202006271227569343.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-c2-vi-vai-455ml-202006271227573676.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-c2-vi-vai-455ml-202006271227577318.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-c2-vi-vai-455ml-202006271227581371.jpg"
+      ],
+      "detail": "Được làm từ lá trà lên men tự nhiên kết hợp cùng quả vải mang đến cho bạn một hương vị trà vải sảng khoái, giải khát tột đỉnh. Trong trà có chứa nhiều chất chống oxy hóa giúp bạn luôn năng động, tỉnh táo và khỏe khoắn suốt ngày dài.",
+      "hsd": "HSD còn 9 tháng",
+      "unit": {
+        "many": true,
+        "detail": [
+          {
+            "id": 1,
+            "name": "1 chai",
+            "price": 9300,
+            "image": "https://cdn.tgdd.vn/Products/Images/8938/224672/bhx/hong-tra-vai-c2-455ml-202103271633286989_300x300.jpg"
+          },
+          {
+            "id": 2,
+            "name": "6 chai",
+            "price": 35000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8938/224673/bhx/6-chai-hong-tra-vai-c2-455ml-202103290345081245_300x300.jpg"
+          },
+          {
+            "id": 3,
+            "name": "Thùng 24 chai",
+            "price": 160000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-vai-c2-455ml-202103290344393925_300x300.jpg"
+          }
+        ]
+      },
+      "subCategoryId": 3,
+      "categoryId": 8
+    },
+    {
+      "id": 35,
+      "name": "Thùng 24 chai hồng trà vải C2 455ml",
+      "images": [
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-vai-c2-455ml-202103290344521951.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-c2-vi-vai-455ml-202006271227569343.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-c2-vi-vai-455ml-202006271227573676.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-c2-vi-vai-455ml-202006271227577318.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-c2-vi-vai-455ml-202006271227581371.jpg"
+      ],
+      "detail": "Được làm từ lá trà lên men tự nhiên kết hợp cùng quả vải mang đến cho bạn một hương vị trà vải sảng khoái, giải khát tột đỉnh. Trong trà có chứa nhiều chất chống oxy hóa giúp bạn luôn năng động, tỉnh táo và khỏe khoắn suốt ngày dài.",
+      "hsd": "HSD còn 9 tháng",
+      "unit": {
+        "many": true,
+        "detail": [
+          {
+            "id": 1,
+            "name": "1 chai",
+            "price": 9300,
+            "image": "https://cdn.tgdd.vn/Products/Images/8938/224672/bhx/hong-tra-vai-c2-455ml-202103271633286989_300x300.jpg"
+          },
+          {
+            "id": 2,
+            "name": "6 chai",
+            "price": 35000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8938/224673/bhx/6-chai-hong-tra-vai-c2-455ml-202103290345081245_300x300.jpg"
+          },
+          {
+            "id": 3,
+            "name": "Thùng 24 chai",
+            "price": 160000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-vai-c2-455ml-202103290344393925_300x300.jpg"
+          }
+        ]
+      },
+      "subCategoryId": 3,
+      "categoryId": 8
+    },
+
+    {
+      "id": 36,
+      "name": "Thùng 48 hộp sữa tươi tiệt trùng có đường Dutch Lady 180ml",
+      "images": [
+        "https://cdn.tgdd.vn/Products/Images/2386/86175/bhx/thung-48-hop-sua-tuoi-tiet-trung-co-duong-dutch-lady-180ml-202106300953407465.jpeg",
+        "https://cdn.tgdd.vn/Products/Images/2386/86175/bhx/thung-48-hop-sua-tuoi-tiet-trung-co-duong-dutch-lady-180ml-202106291141172895.jpg",
+        "https://cdn.tgdd.vn/Products/Images/2386/86175/bhx/thung-48-hop-sua-tuoi-tiet-trung-co-duong-dutch-lady-180ml-202106291141179305.jpg",
+        "https://cdn.tgdd.vn/Products/Images/2386/86175/bhx/thung-48-hop-sua-tuoi-tiet-trung-co-duong-dutch-lady-180ml-202106291141182425.jpg",
+        "https://cdn.tgdd.vn/Products/Images/2386/86175/bhx/thung-48-hop-sua-tuoi-tiet-trung-co-duong-dutch-lady-180ml-202106291141184665.jpg",
+        "https://cdn.tgdd.vn/Products/Images/2386/86175/bhx/thung-48-hop-sua-tuoi-tiet-trung-co-duong-dutch-lady-180ml-202106291141187575.jpg"
+      ],
+      "detail": "Sữa Dutch Lady với hương vị thơm ngon bởi từng giọt sữa bò tươi ngon và đường tinh luyện, sản phẩm dễ uống, đầy dinh dưỡng, đóng gói hộp nhỏ tiện dụng. Thùng 48 hộp sữa tươi tiệt trùng có đường Dutch Lady 180ml là sản phẩm yêu thích của các bé",
+      "hsd": "HSD còn 45 ngày",
+      "unit": {
+        "many": true,
+        "detail": [
+          {
+            "id": 1,
+            "name": "4 hộp",
+            "price": 28000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8938/224672/bhx/hong-tra-vai-c2-455ml-202103271633286989_300x300.jpg"
+          },
+          {
+            "id": 2,
+            "name": "Thùng 48 hộp",
+            "price": 320000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2386/86175/bhx/thung-48-hop-sua-tuoi-tiet-trung-co-duong-dutch-lady-180ml-202106291158384545_300x300.jpg"
+          }
+        ]
+      },
+      "subCategoryId": 9,
+      "categoryId": 8
+    },
+
+    {
+      "id": 37,
+      "name": "Thùng 24 chai hồng trà vải C2 455ml",
+      "images": [
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-vai-c2-455ml-202103290344521951.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-c2-vi-vai-455ml-202006271227569343.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-c2-vi-vai-455ml-202006271227573676.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-c2-vi-vai-455ml-202006271227577318.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-c2-vi-vai-455ml-202006271227581371.jpg"
+      ],
+      "detail": "Được làm từ lá trà lên men tự nhiên kết hợp cùng quả vải mang đến cho bạn một hương vị trà vải sảng khoái, giải khát tột đỉnh. Trong trà có chứa nhiều chất chống oxy hóa giúp bạn luôn năng động, tỉnh táo và khỏe khoắn suốt ngày dài.",
+      "hsd": "HSD còn 9 tháng",
+      "unit": {
+        "many": true,
+        "detail": [
+          {
+            "id": 1,
+            "name": "1 chai",
+            "price": 9300,
+            "image": "https://cdn.tgdd.vn/Products/Images/8938/224672/bhx/hong-tra-vai-c2-455ml-202103271633286989_300x300.jpg"
+          },
+          {
+            "id": 2,
+            "name": "6 chai",
+            "price": 35000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8938/224673/bhx/6-chai-hong-tra-vai-c2-455ml-202103290345081245_300x300.jpg"
+          },
+          {
+            "id": 3,
+            "name": "Thùng 24 chai",
+            "price": 160000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-vai-c2-455ml-202103290344393925_300x300.jpg"
+          }
+        ]
+      },
+      "subCategoryId": 3,
+      "categoryId": 9
+    },
+    {
+      "id": 38,
+      "name": "Thùng 24 chai hồng trà vải C2 455ml",
+      "images": [
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-vai-c2-455ml-202103290344521951.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-c2-vi-vai-455ml-202006271227569343.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-c2-vi-vai-455ml-202006271227573676.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-c2-vi-vai-455ml-202006271227577318.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-c2-vi-vai-455ml-202006271227581371.jpg"
+      ],
+      "detail": "Được làm từ lá trà lên men tự nhiên kết hợp cùng quả vải mang đến cho bạn một hương vị trà vải sảng khoái, giải khát tột đỉnh. Trong trà có chứa nhiều chất chống oxy hóa giúp bạn luôn năng động, tỉnh táo và khỏe khoắn suốt ngày dài.",
+      "hsd": "HSD còn 9 tháng",
+      "unit": {
+        "many": true,
+        "detail": [
+          {
+            "id": 1,
+            "name": "1 chai",
+            "price": 9300,
+            "image": "https://cdn.tgdd.vn/Products/Images/8938/224672/bhx/hong-tra-vai-c2-455ml-202103271633286989_300x300.jpg"
+          },
+          {
+            "id": 2,
+            "name": "6 chai",
+            "price": 35000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8938/224673/bhx/6-chai-hong-tra-vai-c2-455ml-202103290345081245_300x300.jpg"
+          },
+          {
+            "id": 3,
+            "name": "Thùng 24 chai",
+            "price": 160000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-vai-c2-455ml-202103290344393925_300x300.jpg"
+          }
+        ]
+      },
+      "subCategoryId": 3,
+      "categoryId": 9
+    },
+
+    {
+      "id": 39,
+      "name": "Thùng 48 hộp sữa tươi tiệt trùng có đường Dutch Lady 180ml",
+      "images": [
+        "https://cdn.tgdd.vn/Products/Images/2386/86175/bhx/thung-48-hop-sua-tuoi-tiet-trung-co-duong-dutch-lady-180ml-202106300953407465.jpeg",
+        "https://cdn.tgdd.vn/Products/Images/2386/86175/bhx/thung-48-hop-sua-tuoi-tiet-trung-co-duong-dutch-lady-180ml-202106291141172895.jpg",
+        "https://cdn.tgdd.vn/Products/Images/2386/86175/bhx/thung-48-hop-sua-tuoi-tiet-trung-co-duong-dutch-lady-180ml-202106291141179305.jpg",
+        "https://cdn.tgdd.vn/Products/Images/2386/86175/bhx/thung-48-hop-sua-tuoi-tiet-trung-co-duong-dutch-lady-180ml-202106291141182425.jpg",
+        "https://cdn.tgdd.vn/Products/Images/2386/86175/bhx/thung-48-hop-sua-tuoi-tiet-trung-co-duong-dutch-lady-180ml-202106291141184665.jpg",
+        "https://cdn.tgdd.vn/Products/Images/2386/86175/bhx/thung-48-hop-sua-tuoi-tiet-trung-co-duong-dutch-lady-180ml-202106291141187575.jpg"
+      ],
+      "detail": "Sữa Dutch Lady với hương vị thơm ngon bởi từng giọt sữa bò tươi ngon và đường tinh luyện, sản phẩm dễ uống, đầy dinh dưỡng, đóng gói hộp nhỏ tiện dụng. Thùng 48 hộp sữa tươi tiệt trùng có đường Dutch Lady 180ml là sản phẩm yêu thích của các bé",
+      "hsd": "HSD còn 45 ngày",
+      "unit": {
+        "many": true,
+        "detail": [
+          {
+            "id": 1,
+            "name": "4 hộp",
+            "price": 28000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8938/224672/bhx/hong-tra-vai-c2-455ml-202103271633286989_300x300.jpg"
+          },
+          {
+            "id": 2,
+            "name": "Thùng 48 hộp",
+            "price": 320000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2386/86175/bhx/thung-48-hop-sua-tuoi-tiet-trung-co-duong-dutch-lady-180ml-202106291158384545_300x300.jpg"
+          }
+        ]
+      },
+      "subCategoryId": 9,
+      "categoryId": 9
+    },
+
+    {
+      "id": 40,
+      "name": "Thùng 24 chai hồng trà vải C2 455ml",
+      "images": [
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-vai-c2-455ml-202103290344521951.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-c2-vi-vai-455ml-202006271227569343.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-c2-vi-vai-455ml-202006271227573676.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-c2-vi-vai-455ml-202006271227577318.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-c2-vi-vai-455ml-202006271227581371.jpg"
+      ],
+      "detail": "Được làm từ lá trà lên men tự nhiên kết hợp cùng quả vải mang đến cho bạn một hương vị trà vải sảng khoái, giải khát tột đỉnh. Trong trà có chứa nhiều chất chống oxy hóa giúp bạn luôn năng động, tỉnh táo và khỏe khoắn suốt ngày dài.",
+      "hsd": "HSD còn 9 tháng",
+      "unit": {
+        "many": true,
+        "detail": [
+          {
+            "id": 1,
+            "name": "1 chai",
+            "price": 9300,
+            "image": "https://cdn.tgdd.vn/Products/Images/8938/224672/bhx/hong-tra-vai-c2-455ml-202103271633286989_300x300.jpg"
+          },
+          {
+            "id": 2,
+            "name": "6 chai",
+            "price": 35000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8938/224673/bhx/6-chai-hong-tra-vai-c2-455ml-202103290345081245_300x300.jpg"
+          },
+          {
+            "id": 3,
+            "name": "Thùng 24 chai",
+            "price": 160000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-vai-c2-455ml-202103290344393925_300x300.jpg"
+          }
+        ]
+      },
+      "subCategoryId": 3,
+      "categoryId": 10
+    },
+    {
+      "id": 41,
+      "name": "Thùng 24 chai hồng trà vải C2 455ml",
+      "images": [
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-vai-c2-455ml-202103290344521951.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-c2-vi-vai-455ml-202006271227569343.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-c2-vi-vai-455ml-202006271227573676.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-c2-vi-vai-455ml-202006271227577318.jpg",
+        "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-c2-vi-vai-455ml-202006271227581371.jpg"
+      ],
+      "detail": "Được làm từ lá trà lên men tự nhiên kết hợp cùng quả vải mang đến cho bạn một hương vị trà vải sảng khoái, giải khát tột đỉnh. Trong trà có chứa nhiều chất chống oxy hóa giúp bạn luôn năng động, tỉnh táo và khỏe khoắn suốt ngày dài.",
+      "hsd": "HSD còn 9 tháng",
+      "unit": {
+        "many": true,
+        "detail": [
+          {
+            "id": 1,
+            "name": "1 chai",
+            "price": 9300,
+            "image": "https://cdn.tgdd.vn/Products/Images/8938/224672/bhx/hong-tra-vai-c2-455ml-202103271633286989_300x300.jpg"
+          },
+          {
+            "id": 2,
+            "name": "6 chai",
+            "price": 35000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8938/224673/bhx/6-chai-hong-tra-vai-c2-455ml-202103290345081245_300x300.jpg"
+          },
+          {
+            "id": 3,
+            "name": "Thùng 24 chai",
+            "price": 160000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8938/224674/bhx/thung-24-chai-hong-tra-vai-c2-455ml-202103290344393925_300x300.jpg"
+          }
+        ]
+      },
+      "subCategoryId": 3,
+      "categoryId": 10
+    },
+
+    {
+      "id": 42,
+      "name": "Thùng 48 hộp sữa tươi tiệt trùng có đường Dutch Lady 180ml",
+      "images": [
+        "https://cdn.tgdd.vn/Products/Images/2386/86175/bhx/thung-48-hop-sua-tuoi-tiet-trung-co-duong-dutch-lady-180ml-202106300953407465.jpeg",
+        "https://cdn.tgdd.vn/Products/Images/2386/86175/bhx/thung-48-hop-sua-tuoi-tiet-trung-co-duong-dutch-lady-180ml-202106291141172895.jpg",
+        "https://cdn.tgdd.vn/Products/Images/2386/86175/bhx/thung-48-hop-sua-tuoi-tiet-trung-co-duong-dutch-lady-180ml-202106291141179305.jpg",
+        "https://cdn.tgdd.vn/Products/Images/2386/86175/bhx/thung-48-hop-sua-tuoi-tiet-trung-co-duong-dutch-lady-180ml-202106291141182425.jpg",
+        "https://cdn.tgdd.vn/Products/Images/2386/86175/bhx/thung-48-hop-sua-tuoi-tiet-trung-co-duong-dutch-lady-180ml-202106291141184665.jpg",
+        "https://cdn.tgdd.vn/Products/Images/2386/86175/bhx/thung-48-hop-sua-tuoi-tiet-trung-co-duong-dutch-lady-180ml-202106291141187575.jpg"
+      ],
+      "detail": "Sữa Dutch Lady với hương vị thơm ngon bởi từng giọt sữa bò tươi ngon và đường tinh luyện, sản phẩm dễ uống, đầy dinh dưỡng, đóng gói hộp nhỏ tiện dụng. Thùng 48 hộp sữa tươi tiệt trùng có đường Dutch Lady 180ml là sản phẩm yêu thích của các bé",
+      "hsd": "HSD còn 45 ngày",
+      "unit": {
+        "many": true,
+        "detail": [
+          {
+            "id": 1,
+            "name": "4 hộp",
+            "price": 28000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8938/224672/bhx/hong-tra-vai-c2-455ml-202103271633286989_300x300.jpg"
+          },
+          {
+            "id": 2,
+            "name": "Thùng 48 hộp",
+            "price": 320000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2386/86175/bhx/thung-48-hop-sua-tuoi-tiet-trung-co-duong-dutch-lady-180ml-202106291158384545_300x300.jpg"
+          }
+        ]
+      },
+      "subCategoryId": 9,
+      "categoryId": 10
     }
   ]
 }
