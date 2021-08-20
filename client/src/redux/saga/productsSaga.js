@@ -26,12 +26,12 @@ function* loadPageProductsSaga(action) {
   });
 }
 
-function* workerCategoriesSaga() {
+function* workerProductSaga() {
   yield takeEvery(productPending.type, getProductsSaga);
   yield takeLatest(pagePending.type, loadPageProductsSaga);
 }
 
-export default function* categoriesSaga() {
+export default function* ProductsSaga() {
   console.log('productsSaga running');
-  yield all([workerCategoriesSaga()]);
+  yield all([workerProductSaga()]);
 }

@@ -4,16 +4,31 @@ import {appColor} from '../assets/colors';
 import {appFont} from '../assets/fonts';
 
 export default function SingleCatalog(props) {
+  const rolling = () => {
+    props.ListProductRef.current?.scrollToIndex({
+      animated: true,
+      index: props.index,
+    });
+
+    props.changeSelect(props.index);
+  };
+
+  const isSelect = () => {
+    return props.index === props.indexSelect ? true : false;
+  };
+
   return (
-    <TouchableOpacity style={styles.Container}>
-      <Text style={styles.TextBody}>{props.category.name}</Text>
+    <TouchableOpacity
+      style={styles.Container(isSelect())}
+      onPress={() => rolling()}>
+      <Text style={styles.TextBody(isSelect())}>{props.category.name}</Text>
     </TouchableOpacity>
   );
 }
 
 const styles = StyleSheet.create({
-  Container: {
-    backgroundColor: 'white',
+  Container: isSelect => ({
+    backgroundColor: isSelect ? appColor.primary : 'white',
     height: 50,
     width: 70,
     borderWidth: 0.7,
@@ -23,10 +38,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     marginLeft: 5,
-  },
-  TextBody: {
+  }),
+
+  TextBody: isSelect => ({
     fontFamily: appFont.Medium,
-    color: appColor.primary,
+    color: isSelect ? appColor.secondary : appColor.primary,
     textAlign: 'center',
-  },
+  }),
 });

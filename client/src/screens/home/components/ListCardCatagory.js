@@ -13,6 +13,7 @@ import {appFont} from '../../../assets/fonts';
 import {pagePending, productPending} from '../../../redux/slice/productsSlice';
 import DownIcon from '../../../assets/images/arrowDownIcon.svg';
 
+import ListSkeletonCard from '../../../components/ListSkeletonCard';
 import SingleItemCard from './SingleItemCard';
 
 export default function ListCardCatagory(props) {
@@ -39,13 +40,22 @@ export default function ListCardCatagory(props) {
     }
     return false;
   };
-  if (products.isLoading) return <Text>Loading...</Text>;
+  const getIsLoading = () => {
+    const index = products.loading.findIndex(x => x.id === props.category.id);
+    if (index >= 0) {
+      return products.loading[index].isLoading;
+    }
+    return true;
+  };
+  if (getIsLoading()) return <ListSkeletonCard />;
   return (
     <View>
       <FlatList
         data={products.listProducts[findIndex()]?.products}
         keyExtractor={(item, index) => index}
-        renderItem={({item}) => <SingleItemCard product={item} />}
+        renderItem={({item}) => (
+          <SingleItemCard product={item} categoryId={props.category.id} />
+        )}
         numColumns={3}
         contentContainerStyle={{paddingLeft: 2.5}}
         showsVerticalScrollIndicator={false}
@@ -53,6 +63,7 @@ export default function ListCardCatagory(props) {
       {isSubLoading() && (
         <ActivityIndicator size="small" color={appColor.primary} />
       )}
+
       <TouchableOpacity style={styles.ShowMoreBox} onPress={() => showMore()}>
         <Text style={styles.ShowMoreText}>
           Xem thêm sản phẩm hàng hóa{' '}

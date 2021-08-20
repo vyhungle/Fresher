@@ -1,20 +1,29 @@
 import {createSlice} from '@reduxjs/toolkit';
 
 const initialState = {
-  isLoading: true,
+  loading: [],
   isPage: [],
   listProducts: [],
+  product: {},
 };
 
 const productsSlice = createSlice({
   name: 'products',
   initialState,
   reducers: {
-    productPending: state => {
-      state.isLoading = true;
+    productPending: (state, {payload}) => {
+      const index = state.loading.findIndex(x => x.id === payload.id);
+      if (index === -1) {
+        state.loading.push({id: payload.id, isLoading: true});
+      } else {
+        state.loading[index].isLoading = true;
+      }
     },
     productSuccess: (state, {payload}) => {
-      state.isLoading = false;
+      const indexLoading = state.loading.findIndex(
+        x => x.id === payload.res.id,
+      );
+      state.loading[indexLoading].isLoading = false;
       const isList = state.listProducts.some(x => x.id === payload.res.id);
       if (!isList) {
         state.listProducts.push(payload.res);
@@ -43,9 +52,23 @@ const productsSlice = createSlice({
         }
       }
     },
+
+    productDetail: (state, {payload}) => {
+      const index = state.listProducts.findIndex(
+        x => x.id === payload.categoryId,
+      );
+      state.product = state.listProducts[index].products.find(
+        x => x.id === payload.productId,
+      );
+    },
   },
 });
 
-export const {productPending, productSuccess, pagePending, pageSuccess} =
-  productsSlice.actions;
+export const {
+  productPending,
+  productSuccess,
+  pagePending,
+  pageSuccess,
+  productDetail,
+} = productsSlice.actions;
 export default productsSlice.reducer;

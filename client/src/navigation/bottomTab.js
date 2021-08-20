@@ -16,6 +16,7 @@ import UserIconFocused from '../assets/images/userIconFocused.svg';
 
 import DashboardIcon from '../assets/images/dashboard.svg';
 import DashboardIconFocused from '../assets/images/dashboardFocused.svg';
+import Skeleton from '../components/ListSkeletonCard';
 
 const Bottom = () => {
   const Tab = createBottomTabNavigator();
@@ -61,7 +62,7 @@ const Bottom = () => {
       }}>
       <Tab.Screen name="HomeScreen" component={HomeScreen} />
       <Tab.Screen name="HistoricalScreen" component={HistoricalScreen} />
-      <Tab.Screen name="CallScreen" component={CallScreen} />
+      <Tab.Screen name="CallScreen" component={Skeleton} />
       <Tab.Screen name="SettingScreen" component={SettingScreen} />
     </Tab.Navigator>
   );

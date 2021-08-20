@@ -1,13 +1,23 @@
 import React from 'react';
 import {StyleSheet, Text, View, Image, TouchableOpacity} from 'react-native';
+import {useDispatch} from 'react-redux';
+import {useNavigation} from '@react-navigation/native';
+
 import {constantsGlobal} from '../../../api/constants';
 import {appColor} from '../../../assets/colors';
 import {appFont} from '../../../assets/fonts';
+import {productDetail} from '../../../redux/slice/productsSlice';
 import {moneyFormat} from '../../../utils/format';
 
-export default function SingleItemCard({product}) {
+export default function SingleItemCard({product, categoryId}) {
+  const dispatch = useDispatch();
+  const navigation = useNavigation();
+  const goDetail = () => {
+    dispatch(productDetail({categoryId: categoryId, productId: product.id}));
+    navigation.navigate('DetailScreen');
+  };
   return (
-    <TouchableOpacity style={styles.Container}>
+    <TouchableOpacity style={styles.Container} onPress={() => goDetail()}>
       <View style={styles.HSDBox}>
         <Text style={styles.HSDText}>{product.hsd}</Text>
       </View>

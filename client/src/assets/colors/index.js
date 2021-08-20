@@ -5,4 +5,5 @@ export const appColor = {
   secondary: '#E0F43C',
   opacity: 'rgba(0,0,0,.4)',
   border: 'rgba(0,0,0,.1)',
+  buttonOpacity: 'rgba(0,0,0,.25)',
 };

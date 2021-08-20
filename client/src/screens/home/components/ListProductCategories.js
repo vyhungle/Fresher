@@ -4,11 +4,12 @@ import {useSelector} from 'react-redux';
 
 import ListCardCatagory from './ListCardCatagory';
 
-export default function ListProductCategories() {
+export default function ListProductCategories(props) {
   const {categories} = useSelector(s => s.categories);
 
   return (
     <FlatList
+      ref={props.ListProductRef}
       data={categories}
       keyExtractor={item => item.id}
       renderItem={({item}) => <ListCardCatagory category={item} />}

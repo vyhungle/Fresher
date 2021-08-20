@@ -9,6 +9,7 @@ import {navigationRef} from './rootNavigation';
 import BottomTab from '../navigation/bottomTab';
 import LoginScreen from '../screens/login';
 import RegisterScreen from '../screens/register';
+import DetailScreen from '../screens/detail';
 
 export default function AppNavigator() {
   const RootStack = createStackNavigator();
@@ -22,6 +23,7 @@ export default function AppNavigator() {
         <RootStack.Screen name="BottomTab" component={BottomTab} />
         <RootStack.Screen name="LoginScreen" component={LoginScreen} />
         <RootStack.Screen name="RegisterScreen" component={RegisterScreen} />
+        <RootStack.Screen name="DetailScreen" component={DetailScreen} />
       </RootStack.Navigator>
     </NavigationContainer>
   );

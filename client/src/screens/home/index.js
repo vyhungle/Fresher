@@ -5,12 +5,13 @@ import CatalogMain from '../../components/CatalogMain';
 import TopBarMain from '../../components/TopBarMain';
 import ListProductCategories from './components/ListProductCategories';
 
-export default function index() {
+export default function Index() {
+  const ListProductRef = React.useRef();
   return (
     <View style={styles.Container}>
       <TopBarMain />
-      <CatalogMain />
-      <ListProductCategories />
+      <CatalogMain ListProductRef={ListProductRef} />
+      <ListProductCategories ListProductRef={ListProductRef} />
     </View>
   );
 }
