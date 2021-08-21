@@ -1,9 +1,8 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 import Geolocation from '@react-native-community/geolocation';
 import {useDispatch} from 'react-redux';
 
-import {appColor} from '../../assets/colors';
 import CatalogMain from '../../components/CatalogMain';
 import TopBarMain from '../../components/TopBarMain';
 import ListProductCategories from './components/ListProductCategories';
@@ -14,7 +13,6 @@ export default function Index() {
   const ListProductRef = React.useRef();
   const ListCatalogRef = React.useRef();
   Geolocation.getCurrentPosition(data => {
-    console.log(data);
     dispatch(
       locationPending({
         latitude: data.coords.latitude,

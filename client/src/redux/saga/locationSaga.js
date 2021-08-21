@@ -3,7 +3,7 @@ import {all, call, put, takeEvery} from 'redux-saga/effects';
 import {getUserLocation} from '../../api/mapApi';
 import {locationPending, locationSuccess} from '../slice/locationSlice';
 
-function* locationSaga(action) {
+function* getLocationSaga(action) {
   const {payload} = action;
   const {data} = yield call(
     getUserLocation,
@@ -21,10 +21,10 @@ function* locationSaga(action) {
 }
 
 function* workerLocationSaga() {
-  yield takeEvery(locationPending.type, locationSaga);
+  yield takeEvery(locationPending.type, getLocationSaga);
 }
 
-export default function* categoriesSaga() {
+export default function* locationSaga() {
   console.log('locationSaga running');
   yield all([workerLocationSaga()]);
 }

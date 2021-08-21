@@ -4,6 +4,7 @@ import rootSaga from './rootSaga';
 import categoriesReducer from './slice/categoriesSlice';
 import productsReducer from './slice/productsSlice';
 import locationReducer from './slice/locationSlice';
+import cartReducer from './slice/cartSlice';
 
 const sagaMiddleware = createSagaMiddleware();
 
@@ -12,6 +13,7 @@ export const store = configureStore({
     categories: categoriesReducer,
     products: productsReducer,
     location: locationReducer,
+    cart: cartReducer,
   },
   middleware: getDefaultMiddleware =>
     getDefaultMiddleware().concat(sagaMiddleware),

@@ -4,8 +4,6 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 import {appColor} from '../assets/colors';
 import HomeScreen from '../screens/home';
-import CallScreen from '../screens/call';
-import HistoricalScreen from '../screens/historical';
 import SettingScreen from '../screens/setting';
 import HistoryIcon from '../assets/images/historyIcon.svg';
 import HistoryIconFocused from '../assets/images/historyIconFocused.svg';
@@ -16,7 +14,6 @@ import UserIconFocused from '../assets/images/userIconFocused.svg';
 
 import DashboardIcon from '../assets/images/dashboard.svg';
 import DashboardIconFocused from '../assets/images/dashboardFocused.svg';
-import Skeleton from '../components/ListSkeletonCard';
 
 const Bottom = () => {
   const Tab = createBottomTabNavigator();
@@ -61,8 +58,8 @@ const Bottom = () => {
         },
       }}>
       <Tab.Screen name="HomeScreen" component={HomeScreen} />
-      <Tab.Screen name="HistoricalScreen" component={HistoricalScreen} />
-      <Tab.Screen name="CallScreen" component={Skeleton} />
+      <Tab.Screen name="HistoricalScreen" component={SettingScreen} />
+      <Tab.Screen name="CallScreen" component={SettingScreen} />
       <Tab.Screen name="SettingScreen" component={SettingScreen} />
     </Tab.Navigator>
   );

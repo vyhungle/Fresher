@@ -8,6 +8,7 @@ import {
   ActivityIndicator,
 } from 'react-native';
 import {useSelector} from 'react-redux';
+import {useNavigation} from '@react-navigation/native';
 
 import {constantsGlobal} from '../api/constants';
 import {appColor} from '../assets/colors';
@@ -18,7 +19,8 @@ import CartIcon from '../assets/images/shopping-cartIcon.svg';
 
 export default function TopBarMain() {
   const location = useSelector(s => s.location);
-  console.log(location);
+  const navigation = useNavigation();
+
   return (
     <View style={styles.Container}>
       <TouchableOpacity style={styles.BoxIcon}>
@@ -55,7 +57,9 @@ export default function TopBarMain() {
         </Text>
       </TouchableOpacity>
 
-      <TouchableOpacity style={styles.BoxCart}>
+      <TouchableOpacity
+        style={styles.BoxCart}
+        onPress={() => navigation.navigate('CartScreen')}>
         <CartIcon width={20} height={20} />
         <Text style={styles.CartText}>Giỏ hàng</Text>
       </TouchableOpacity>
