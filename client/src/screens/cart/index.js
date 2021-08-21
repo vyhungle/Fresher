@@ -1,18 +1,27 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {ScrollView, StyleSheet, Text, View} from 'react-native';
 import {useSelector} from 'react-redux';
 
 import TopBar from '../../components/TopBarMain';
+import ListCart from './components/ListCart';
+import FooterCart from './components/FooterCart';
 
 export default function Index() {
   const cart = useSelector(s => s.cart);
-  console.log(cart);
   return (
-    <View>
+    <View style={styles.Container}>
       <TopBar />
-      <Text>cart</Text>
+      <ScrollView showsVerticalScrollIndicator={false}>
+        <ListCart cart={cart} />
+        <FooterCart total={cart.total} />
+      </ScrollView>
     </View>
   );
 }
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  Container: {
+    flex: 1,
+    backgroundColor: 'white',
+  },
+});

@@ -19,6 +19,7 @@ import CartIcon from '../assets/images/shopping-cartIcon.svg';
 
 export default function TopBarMain() {
   const location = useSelector(s => s.location);
+  const {number} = useSelector(s => s.cart);
   const navigation = useNavigation();
 
   return (
@@ -60,6 +61,9 @@ export default function TopBarMain() {
       <TouchableOpacity
         style={styles.BoxCart}
         onPress={() => navigation.navigate('CartScreen')}>
+        <View style={styles.BadgeBox}>
+          <Text style={styles.BadgeText}>{number}</Text>
+        </View>
         <CartIcon width={20} height={20} />
         <Text style={styles.CartText}>Giỏ hàng</Text>
       </TouchableOpacity>
@@ -140,5 +144,22 @@ const styles = StyleSheet.create({
     color: 'white',
     fontFamily: appFont.Regular,
     fontSize: 12,
+  },
+
+  BadgeBox: {
+    width: 15,
+    height: 15,
+    borderRadius: 10,
+    backgroundColor: 'red',
+    position: 'absolute',
+    left: 35,
+    top: -5,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  BadgeText: {
+    fontSize: 10,
+    color: 'white',
   },
 });
