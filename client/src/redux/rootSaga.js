@@ -1,7 +1,8 @@
 import {all} from 'redux-saga/effects';
 import categoriesSaga from './saga/categoriesSaga';
-import ProductsSaga from './saga/productsSaga';
+import productsSaga from './saga/productsSaga';
+import locationSaga from './saga/locationSaga';
 
 export default function* rootSaga() {
-  yield all([categoriesSaga(), ProductsSaga()]);
+  yield all([categoriesSaga(), productsSaga(), locationSaga()]);
 }

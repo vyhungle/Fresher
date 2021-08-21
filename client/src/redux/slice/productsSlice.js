@@ -5,6 +5,7 @@ const initialState = {
   isPage: [],
   listProducts: [],
   product: {},
+  selectIndex: 0,
 };
 
 const productsSlice = createSlice({
@@ -61,6 +62,11 @@ const productsSlice = createSlice({
         x => x.id === payload.productId,
       );
     },
+
+    changeSelectIndex: (state, {payload}) => {
+      console.log(payload);
+      state.selectIndex = payload.index;
+    },
   },
 });
 
@@ -70,5 +76,6 @@ export const {
   pagePending,
   pageSuccess,
   productDetail,
+  changeSelectIndex,
 } = productsSlice.actions;
 export default productsSlice.reducer;

@@ -5,7 +5,9 @@ import {
   TouchableOpacity,
   View,
   TextInput,
+  ActivityIndicator,
 } from 'react-native';
+import {useSelector} from 'react-redux';
 
 import {constantsGlobal} from '../api/constants';
 import {appColor} from '../assets/colors';
@@ -15,6 +17,8 @@ import SearchIcon from '../assets/images/searchIcon.svg';
 import CartIcon from '../assets/images/shopping-cartIcon.svg';
 
 export default function TopBarMain() {
+  const location = useSelector(s => s.location);
+  console.log(location);
   return (
     <View style={styles.Container}>
       <TouchableOpacity style={styles.BoxIcon}>
@@ -36,7 +40,11 @@ export default function TopBarMain() {
       <TouchableOpacity style={styles.BoxGH}>
         <Text style={styles.GHTitle}>Giao Tại</Text>
         <Text style={styles.GHBody} numberOfLines={1}>
-          P.Tây Thạnh
+          {location.isLoading ? (
+            <ActivityIndicator size="small" color={appColor.primary} />
+          ) : (
+            location.locationName
+          )}
         </Text>
       </TouchableOpacity>
 

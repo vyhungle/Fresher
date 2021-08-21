@@ -1,18 +1,13 @@
 import React from 'react';
 import {StyleSheet, Text, View, FlatList} from 'react-native';
 import {useSelector} from 'react-redux';
+
 import ListSkeletonCatalog from './ListSkeletonCatalog';
 import ListSkeletonCard from './ListSkeletonCard';
-
 import SingleCatalog from './SingleCatalog';
 
 export default function CatalogMain(props) {
   const {categories, isLoading} = useSelector(s => s.categories);
-  const [indexSelect, setIndexSelect] = React.useState(0);
-
-  const changeSelect = index => {
-    setIndexSelect(index);
-  };
 
   if (isLoading) {
     return (
@@ -27,6 +22,7 @@ export default function CatalogMain(props) {
 
   return (
     <FlatList
+      ref={props.ListCatalogRef}
       data={categories}
       keyExtractor={item => item.id}
       showsHorizontalScrollIndicator={false}
@@ -36,8 +32,6 @@ export default function CatalogMain(props) {
           category={item}
           index={index}
           ListProductRef={props.ListProductRef}
-          indexSelect={indexSelect}
-          changeSelect={changeSelect}
         />
       )}
       contentContainerStyle={{paddingVertical: 5}}

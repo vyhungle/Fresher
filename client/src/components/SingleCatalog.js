@@ -1,20 +1,26 @@
 import React from 'react';
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {useSelector, useDispatch} from 'react-redux';
+
 import {appColor} from '../assets/colors';
 import {appFont} from '../assets/fonts';
+import {changeSelectIndex} from '../redux/slice/productsSlice';
 
 export default function SingleCatalog(props) {
+  const dispatch = useDispatch();
+  const {selectIndex} = useSelector(s => s.products);
   const rolling = () => {
+    console.log('press');
     props.ListProductRef.current?.scrollToIndex({
       animated: true,
       index: props.index,
     });
 
-    props.changeSelect(props.index);
+    dispatch(changeSelectIndex({index: props.index}));
   };
 
   const isSelect = () => {
-    return props.index === props.indexSelect ? true : false;
+    return props.index === selectIndex ? true : false;
   };
 
   return (
