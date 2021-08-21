@@ -1,9 +1,12 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
+import {useSelector} from 'react-redux';
 
 import TopBar from '../../components/TopBarMain';
 
-export default function index() {
+export default function Index() {
+  const cart = useSelector(s => s.cart);
+  console.log(cart);
   return (
     <View>
       <TopBar />

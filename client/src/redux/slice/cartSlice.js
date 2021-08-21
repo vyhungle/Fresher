@@ -20,13 +20,10 @@ const cartSlice = createSlice({
       state.number = payload.res.number;
       state.total = payload.res.total;
     },
+    addToCartPending: state => {},
+    removeToCartPending: state => {},
 
-    addToCart: (state, {payload}) => {
-      state.products = payload.res.products;
-      state.number = payload.res.number;
-      state.total = payload.res.total;
-    },
-    removeToCart: (state, {payload}) => {
+    updateCart: (state, {payload}) => {
       state.products = payload.res.products;
       state.number = payload.res.number;
       state.total = payload.res.total;
@@ -34,6 +31,6 @@ const cartSlice = createSlice({
   },
 });
 
-export const {cartPending, cartSuccess, addToCart, removeToCart} =
+export const {cartPending, cartSuccess, addToCartPending, updateCart} =
   cartSlice.actions;
 export default cartSlice.reducer;

@@ -8,6 +8,7 @@ import {appColor} from '../../../assets/colors';
 import {appFont} from '../../../assets/fonts';
 import {productDetail} from '../../../redux/slice/productsSlice';
 import {moneyFormat} from '../../../utils/format';
+import {addToCartPending} from '../../../redux/slice/cartSlice';
 
 export default function SingleItemCard({product, categoryId}) {
   const dispatch = useDispatch();
@@ -15,6 +16,9 @@ export default function SingleItemCard({product, categoryId}) {
   const goDetail = () => {
     dispatch(productDetail({categoryId: categoryId, productId: product.id}));
     navigation.navigate('DetailScreen');
+  };
+  const addToCartPress = (product, unit) => {
+    dispatch(addToCartPending({product, unit}));
   };
   return (
     <TouchableOpacity style={styles.Container} onPress={() => goDetail()}>
@@ -35,7 +39,9 @@ export default function SingleItemCard({product, categoryId}) {
           <Text style={styles.UnitText}>đ</Text>
         </Text>
 
-        <TouchableOpacity style={styles.BuyBox}>
+        <TouchableOpacity
+          style={styles.BuyBox}
+          onPress={() => addToCartPress(product, product.unit.detail[0])}>
           <Text style={styles.BuyText}>MUA</Text>
         </TouchableOpacity>
       </View>
