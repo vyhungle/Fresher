@@ -22,6 +22,7 @@ const cartSlice = createSlice({
     },
     addToCartPending: state => {},
     removeToCartPending: state => {},
+    clearItemCartPending: state => {},
 
     updateCart: (state, {payload}) => {
       state.products = payload.res.products;
@@ -31,6 +32,12 @@ const cartSlice = createSlice({
   },
 });
 
-export const {cartPending, cartSuccess, addToCartPending, updateCart} =
-  cartSlice.actions;
+export const {
+  cartPending,
+  cartSuccess,
+  addToCartPending,
+  updateCart,
+  removeToCartPending,
+  clearItemCartPending,
+} = cartSlice.actions;
 export default cartSlice.reducer;

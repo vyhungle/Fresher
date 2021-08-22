@@ -10,9 +10,8 @@ function* getLocationSaga(action) {
     payload.latitude,
     payload.longitude,
   );
-
   const localityInfo = data.localityInfo.administrative;
-  const locationName = `P.${localityInfo[4].name}, Q.${localityInfo[3].name}, TP.${localityInfo[2].name}`;
+  const locationName = `P.${localityInfo[3].name}, Q.${localityInfo[3].name}, TP.${localityInfo[2].name}`;
 
   yield put({
     type: locationSuccess.type,

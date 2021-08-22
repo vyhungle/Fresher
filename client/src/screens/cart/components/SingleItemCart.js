@@ -1,5 +1,6 @@
 import React from 'react';
 import {StyleSheet, Text, View, Image, TouchableOpacity} from 'react-native';
+import {useDispatch} from 'react-redux';
 
 import {constantsGlobal} from '../../../api/constants';
 import {appColor} from '../../../assets/colors';
@@ -8,16 +9,34 @@ import {moneyFormat} from '../../../utils/format';
 import MinusIcon from '../../../assets/images/minusIcon.svg';
 import PlusIcon from '../../../assets/images/plusIcon.svg';
 import DeleteIcon from '../../../assets/images/deleteIcon.svg';
+import {
+  addToCartPending,
+  clearItemCartPending,
+  removeToCartPending,
+} from '../../../redux/slice/cartSlice';
 
 export default function SingleItemCart(props) {
+  const dispatch = useDispatch();
   const product = props.data.product;
   const unit = props.data.unit;
   const number = props.data.number;
 
+  const clearItemCartPress = (product, unit) => {
+    dispatch(clearItemCartPending({product, unit}));
+  };
+  const addToCartPress = (product, unit) => {
+    dispatch(addToCartPending({product, unit}));
+  };
+  const removeToCartPress = (product, unit) => {
+    dispatch(removeToCartPending({product, unit}));
+  };
+
   return (
     <View style={styles.Container}>
       <View style={styles.ImageBox}>
-        <TouchableOpacity style={styles.DeleteButton}>
+        <TouchableOpacity
+          style={styles.DeleteButton}
+          onPress={() => clearItemCartPress(product, unit)}>
           <DeleteIcon width={10} height={10} />
         </TouchableOpacity>
         <Image style={styles.ImageProduct} source={{uri: product.images[0]}} />
@@ -35,13 +54,17 @@ export default function SingleItemCart(props) {
         </Text>
 
         <View style={styles.BuyButtonBox}>
-          <TouchableOpacity style={styles.ButtonCard}>
+          <TouchableOpacity
+            style={styles.ButtonCard}
+            onPress={() => removeToCartPress(product, unit)}>
             <MinusIcon width={14} height={14} />
           </TouchableOpacity>
           <View style={styles.NumberBox}>
             <Text style={styles.NumberText}>{number}</Text>
           </View>
-          <TouchableOpacity style={styles.ButtonCard}>
+          <TouchableOpacity
+            style={styles.ButtonCard}
+            onPress={() => addToCartPress(product, unit)}>
             <PlusIcon width={14} height={14} />
           </TouchableOpacity>
         </View>

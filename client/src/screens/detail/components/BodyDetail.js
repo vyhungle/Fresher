@@ -7,14 +7,20 @@ import {
   Image,
   FlatList,
 } from 'react-native';
+import {useDispatch} from 'react-redux';
 import {appColor} from '../../../assets/colors';
 import {appFont} from '../../../assets/fonts';
+import {addToCartPending} from '../../../redux/slice/cartSlice';
 import {moneyFormat} from '../../../utils/format';
 
 export default function BodyDetail({product}) {
+  const dispatch = useDispatch();
+
   const ButtonBuy = ({data}) => {
     return (
-      <TouchableOpacity style={styles.BuyBox}>
+      <TouchableOpacity
+        style={styles.BuyBox}
+        onPress={() => addToCartPress(product, data)}>
         <View style={styles.BodyBox}>
           <Image source={{uri: data.image}} style={styles.BodyImage} />
           <Text style={styles.BodyText}>{data.name}</Text>
@@ -31,6 +37,10 @@ export default function BodyDetail({product}) {
         </View>
       </TouchableOpacity>
     );
+  };
+
+  const addToCartPress = (product, unit) => {
+    dispatch(addToCartPending({product, unit}));
   };
   return (
     <View style={styles.Container}>
