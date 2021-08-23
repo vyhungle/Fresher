@@ -11,6 +11,7 @@ import LoginScreen from '../screens/login';
 import RegisterScreen from '../screens/register';
 import DetailScreen from '../screens/detail';
 import CartScreen from '../screens/cart';
+import LocationScreen from '../screens/location';
 
 export default function AppNavigator() {
   const RootStack = createStackNavigator();
@@ -26,6 +27,7 @@ export default function AppNavigator() {
         <RootStack.Screen name="RegisterScreen" component={RegisterScreen} />
         <RootStack.Screen name="DetailScreen" component={DetailScreen} />
         <RootStack.Screen name="CartScreen" component={CartScreen} />
+        <RootStack.Screen name="LocationScreen" component={LocationScreen} />
       </RootStack.Navigator>
     </NavigationContainer>
   );

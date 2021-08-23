@@ -5,15 +5,16 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {appColor} from '../assets/colors';
 import HomeScreen from '../screens/home';
 import SettingScreen from '../screens/setting';
-import HistoryIcon from '../assets/images/historyIcon.svg';
-import HistoryIconFocused from '../assets/images/historyIconFocused.svg';
-import CallIcon from '../assets/images/callIcon.svg';
-import CallIconFocused from '../assets/images/callIconFocused.svg';
-import UserIcon from '../assets/images/userIcon.svg';
-import UserIconFocused from '../assets/images/userIconFocused.svg';
 
+//icon
 import DashboardIcon from '../assets/images/dashboard.svg';
 import DashboardIconFocused from '../assets/images/dashboardFocused.svg';
+import Discount from '../assets/images/discount.svg';
+import DiscountFocused from '../assets/images/discountFocused.svg';
+import Notify from '../assets/images/bell.svg';
+import NotifyFocused from '../assets/images/bellFocused.svg';
+import UserIcon from '../assets/images/user.svg';
+import UserIconFocused from '../assets/images/userFocused.svg';
 
 const Bottom = () => {
   const Tab = createBottomTabNavigator();
@@ -27,17 +28,17 @@ const Bottom = () => {
             ) : (
               <DashboardIcon width={25} height={25} />
             );
-          } else if (route.name === 'HistoricalScreen') {
+          } else if (route.name === 'DiscountScreen') {
             return focused ? (
-              <HistoryIconFocused width={25} height={25} />
+              <DiscountFocused width={25} height={25} />
             ) : (
-              <HistoryIcon width={25} height={25} />
+              <Discount width={25} height={25} />
             );
-          } else if (route.name === 'CallScreen') {
+          } else if (route.name === 'NotifyScreen') {
             return focused ? (
-              <CallIconFocused width={25} height={25} />
+              <NotifyFocused width={25} height={25} />
             ) : (
-              <CallIcon width={25} height={25} />
+              <Notify width={25} height={25} />
             );
           } else if (route.name === 'SettingScreen') {
             return focused ? (
@@ -58,8 +59,8 @@ const Bottom = () => {
         },
       }}>
       <Tab.Screen name="HomeScreen" component={HomeScreen} />
-      <Tab.Screen name="HistoricalScreen" component={SettingScreen} />
-      <Tab.Screen name="CallScreen" component={SettingScreen} />
+      <Tab.Screen name="DiscountScreen" component={SettingScreen} />
+      <Tab.Screen name="NotifyScreen" component={SettingScreen} />
       <Tab.Screen name="SettingScreen" component={SettingScreen} />
     </Tab.Navigator>
   );
