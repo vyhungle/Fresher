@@ -22,7 +22,8 @@ export default function ListCardCatagory(props) {
   const [page, setPage] = React.useState(2);
   React.useEffect(() => {
     dispatch(productPending({id: props.category.id, page: 1}));
-  }, [dispatch, props]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const showMore = () => {
     setPage(old => old + 1);
@@ -47,7 +48,9 @@ export default function ListCardCatagory(props) {
     }
     return true;
   };
-  if (getIsLoading()) return <ListSkeletonCard />;
+  if (getIsLoading()) {
+    return <ListSkeletonCard />;
+  }
   return (
     <View>
       <FlatList

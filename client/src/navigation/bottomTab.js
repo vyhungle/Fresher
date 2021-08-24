@@ -5,6 +5,7 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {appColor} from '../assets/colors';
 import HomeScreen from '../screens/home';
 import SettingScreen from '../screens/setting';
+import TestClassScreen from '../screens/test/classComponent';
 
 //icon
 import DashboardIcon from '../assets/images/dashboard.svg';
@@ -59,7 +60,7 @@ const Bottom = () => {
         },
       }}>
       <Tab.Screen name="HomeScreen" component={HomeScreen} />
-      <Tab.Screen name="DiscountScreen" component={SettingScreen} />
+      <Tab.Screen name="DiscountScreen" component={TestClassScreen} />
       <Tab.Screen name="NotifyScreen" component={SettingScreen} />
       <Tab.Screen name="SettingScreen" component={SettingScreen} />
     </Tab.Navigator>

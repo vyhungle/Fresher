@@ -40,7 +40,9 @@ export default function TopBarMain() {
         </View>
       </TouchableOpacity>
 
-      <TouchableOpacity style={styles.BoxGH}>
+      <TouchableOpacity
+        style={styles.BoxGH}
+        onPress={() => navigation.navigate('LocationScreen')}>
         <Text style={styles.GHTitle}>Giao Tại</Text>
         <Text style={styles.GHBody} numberOfLines={1}>
           {location.isLoading ? (

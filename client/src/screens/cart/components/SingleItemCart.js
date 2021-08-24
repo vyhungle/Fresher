@@ -43,7 +43,9 @@ export default function SingleItemCart(props) {
       </View>
 
       <View style={styles.BodyBox}>
-        <Text style={styles.BodyName}>{product.name}</Text>
+        <Text style={styles.BodyName} numberOfLines={2}>
+          {product.name}
+        </Text>
         <Text style={styles.BodyHSD}>{product.hsd}</Text>
         <Text style={styles.BodyHSD}>{unit.name}</Text>
       </View>
