@@ -1,4 +1,60 @@
 {
+  "order": [
+    {
+      "id": 1,
+      "phoneNumber": "0983782942",
+      "total": "84000",
+      "number": 1,
+      "products": [
+        {
+          "product": {
+            "id": 1,
+            "name": "Thịt gà kho sả ớt khay 390g",
+            "images": [
+              "https://cdn.tgdd.vn/Products/Images/8791/238286/bhx/thit-ga-kho-sa-ot-khay-390g-202107011131133251.jpg",
+              "https://cdn.tgdd.vn/Products/Images/8791/238286/bhx/thit-ga-kho-sa-ot-khay-390g-202107011131136376.jpg",
+              "https://cdn.tgdd.vn/Products/Images/8791/238286/bhx/thit-ga-kho-sa-ot-khay-390g-202107011131140014.jpg",
+              "https://cdn.tgdd.vn/Products/Images/8791/238286/bhx/thit-ga-kho-sa-ot-khay-390g-202107011131143452.jpg"
+            ],
+            "detail": "Thịt gà kho sả ớt được đóng khay sạch sẽ - đảm bảo vệ sinh an toàn thực phẩm. Sản phẩm đã có đầy đủ nguyên liệu tươi, được đóng gói riêng biệt, dễ dàng gia giảm nguyên liệu theo khẩu vị riêng. Phục vụ tốt cho gia đình bạn có món ngon trọn dinh dưỡng",
+            "hsd": "HSD còn 4 tháng",
+            "unit": {
+              "many": false,
+              "detail": [
+                {
+                  "id": 1,
+                  "name": "khay 390g",
+                  "price": 42000,
+                  "image": "https://cdn.tgdd.vn/Products/Images/8791/238286/bhx/thit-ga-kho-sa-ot-khay-390g-202107011131133251.jpg"
+                }
+              ]
+            },
+            "subCategoryId": 1,
+            "categoryId": 1
+          },
+          "unit": {
+            "id": 1,
+            "name": "khay 390g",
+            "price": 42000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8791/238286/bhx/thit-ga-kho-sa-ot-khay-390g-202107011131133251.jpg"
+          },
+          "number": 2
+        }
+      ],
+      "status": 0
+    }
+  ],
+  "notification": [
+    {
+      "id": 1,
+      "phoneNumber": "0983782942",
+      "orderId": 1,
+      "title": "Mã đơn hàng: #",
+      "body": "Đơn hàng của bạn đã được xác nhận, đơn hàng sẽ được giao trong vòng vài giời tới",
+      "navigate": "NotificationDetailScreen",
+      "read": false
+    }
+  ],
   "categories": [
     { "id": 1, "name": "Thịt, cá, trứng rau" },
     { "id": 2, "name": "Đồ uống các loại" },
