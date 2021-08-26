@@ -13,6 +13,18 @@ export const deleteAccessCart = async () => {
   await AsyncStorage.removeItem('cart');
 };
 
+export const getAccessAuth = async () => {
+  return await AsyncStorage.getItem('auth');
+};
+
+export const setAccessAuth = async phone => {
+  await AsyncStorage.setItem('auth', phone);
+};
+
+export const deleteAccessAuth = async () => {
+  await AsyncStorage.removeItem('auth');
+};
+
 export const getFcmToken = async token => {
   let fcmToken = await AsyncStorage.getItem('fcmToken');
   console.log('Old token: ', fcmToken);

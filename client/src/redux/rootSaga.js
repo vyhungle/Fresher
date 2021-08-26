@@ -5,9 +5,11 @@ import locationSaga from './saga/locationSaga';
 import cartSaga from './saga/cartSaga';
 import orderSaga from './saga/orderSaga';
 import notificationSaga from './saga/notificationSaga';
+import authSaga from './saga/authSaga';
 
 export default function* rootSaga() {
   yield all([
+    authSaga(),
     categoriesSaga(),
     productsSaga(),
     locationSaga(),

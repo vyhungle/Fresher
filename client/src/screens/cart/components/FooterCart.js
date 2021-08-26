@@ -1,6 +1,6 @@
 import React from 'react';
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
-import {useDispatch} from 'react-redux';
+import {useDispatch, useSelector} from 'react-redux';
 import {useNavigation} from '@react-navigation/native';
 
 import {constantsGlobal} from '../../../api/constants';
@@ -11,19 +11,24 @@ import {moneyFormat} from '../../../utils/format';
 
 export default function FooterCart(props) {
   const {products, total, unit, number} = props.cart;
+  const {isAuth, phoneNumber} = useSelector(s => s.auth);
   const dispatch = useDispatch();
   const navigation = useNavigation();
   const orderPress = () => {
-    dispatch(
-      addOrderPending({
-        products,
-        unit,
-        number,
-        total,
-        phoneNumber: '0983782942',
-      }),
-    );
-    navigation.navigate('OrderScreen');
+    if (isAuth) {
+      dispatch(
+        addOrderPending({
+          products,
+          unit,
+          number,
+          total,
+          phoneNumber: '0983782942',
+        }),
+      );
+      navigation.navigate('OrderScreen');
+    } else {
+      navigation.navigate('SettingScreen');
+    }
   };
 
   return (

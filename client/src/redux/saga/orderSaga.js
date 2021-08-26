@@ -1,36 +1,34 @@
 import {all, call, put, takeLatest} from 'redux-saga/effects';
 
-import {getNotification} from '../../api/notificationApi';
-import {addOrder, getSingleOrder} from '../../api/orderApi';
+import {addOrder, getOrder, getSingleOrder} from '../../api/orderApi';
 import {deleteAccessCart} from '../../utils/asyncStore';
 import {clearCart} from '../slice/cartSlice';
-import {
-  notificationLoadMorePending,
-  notificationLoadMoreSuccess,
-  notificationPending,
-  notificationSuccess,
-} from '../slice/notificationSlice';
+
 import {
   addOrderPending,
   addOrderSuccess,
   getSingleOrderPending,
   getSingleOrderSuccess,
+  orderLoadMorePending,
+  orderLoadMoreSuccess,
+  orderPending,
+  orderSuccess,
 } from '../slice/orderSlice';
 
-function* getNotificationSaga(action) {
+function* getOrderSaga(action) {
   const {payload} = action;
-  const {data} = yield call(getNotification, payload.phone, payload.page);
+  const {data} = yield call(getOrder, payload.phone, payload.page);
   yield put({
-    type: notificationSuccess.type,
-    payload: {res: {notifications: data}},
+    type: orderSuccess.type,
+    payload: {res: {orders: data}},
   });
 }
-function* loadMoreNotificationSaga(action) {
+function* loadMoreOrderSaga(action) {
   const {payload} = action;
-  const {data} = yield call(getNotification, payload.phone, payload.page);
+  const {data} = yield call(getOrder, payload.phone, payload.page);
   yield put({
-    type: notificationLoadMoreSuccess.type,
-    payload: {res: {notifications: data}},
+    type: orderLoadMoreSuccess.type,
+    payload: {res: {orders: data}},
   });
 }
 
@@ -47,6 +45,7 @@ function* addOrderSaga(action) {
 
 function* getSingleOrderSaga(action) {
   const {payload} = action;
+  console.log(payload.id);
   const {data} = yield call(getSingleOrder, payload.id);
   if (data) {
     yield put({
@@ -55,14 +54,15 @@ function* getSingleOrderSaga(action) {
     });
   }
 }
-function* workerNotificationSaga() {
-  yield takeLatest(notificationPending.type, getNotificationSaga);
-  yield takeLatest(notificationLoadMorePending.type, loadMoreNotificationSaga);
+
+function* workerOrderSaga() {
+  yield takeLatest(orderPending.type, getOrderSaga);
+  yield takeLatest(orderLoadMorePending.type, loadMoreOrderSaga);
   yield takeLatest(addOrderPending.type, addOrderSaga);
   yield takeLatest(getSingleOrderPending.type, getSingleOrderSaga);
 }
 
-export default function* NotificationSaga() {
-  console.log('NotificationSaga running');
-  yield all([workerNotificationSaga()]);
+export default function* OrderSaga() {
+  console.log('OrderSaga running');
+  yield all([workerOrderSaga()]);
 }

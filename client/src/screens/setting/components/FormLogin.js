@@ -8,11 +8,16 @@ import {
   ActivityIndicator,
 } from 'react-native';
 import {useNavigation} from '@react-navigation/native';
+import {useDispatch, useSelector} from 'react-redux';
+
 import {Formik} from 'formik';
 import {appColor} from '../../../assets/colors';
 import {appFont} from '../../../assets/fonts';
+import {authPending} from '../../../redux/slice/authSlice';
 
 export default function FormLogin() {
+  const dispatch = useDispatch();
+  const {isLoading} = useSelector(s => s.auth);
   return (
     <View style={styles.Container}>
       <Formik
@@ -20,7 +25,7 @@ export default function FormLogin() {
           phoneNumber: '',
         }}
         onSubmit={values => {
-          console.log(values);
+          dispatch(authPending({phoneNumber: values.phoneNumber}));
         }}>
         {formProps => (
           <View>
@@ -34,7 +39,13 @@ export default function FormLogin() {
             <TouchableOpacity
               style={styles.ButtonLogin}
               onPress={() => formProps.handleSubmit()}>
-              <Text style={styles.TextButton}>Đăng Nhập</Text>
+              <Text style={styles.TextButton}>
+                {isLoading ? (
+                  <ActivityIndicator size="small" color="white" />
+                ) : (
+                  'Đăng Nhập'
+                )}
+              </Text>
             </TouchableOpacity>
           </View>
         )}

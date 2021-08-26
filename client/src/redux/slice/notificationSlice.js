@@ -27,6 +27,20 @@ const notificationSlice = createSlice({
         payload.res.notifications,
       );
     },
+
+    addNotification: (state, {payload}) => {
+      state.notifications.unshift(payload.res);
+    },
+
+    readNotificationPending: state => {},
+    readNotificationSuccess: (state, {payload}) => {
+      const index = state.notifications.findIndex(x => x.id === payload.id);
+
+      if (index !== -1) {
+        console.log(state.notifications[index].read);
+        state.notifications[index].read = true;
+      }
+    },
   },
 });
 
@@ -35,5 +49,8 @@ export const {
   notificationPending,
   notificationLoadMorePending,
   notificationLoadMoreSuccess,
+  addNotification,
+  readNotificationPending,
+  readNotificationSuccess,
 } = notificationSlice.actions;
 export default notificationSlice.reducer;

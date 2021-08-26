@@ -5,7 +5,7 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {appColor} from '../assets/colors';
 import HomeScreen from '../screens/home';
 import SettingScreen from '../screens/setting';
-import TestClassScreen from '../screens/test/classComponent';
+import NotificationScreen from '../screens/notification';
 
 //icon
 import DashboardIcon from '../assets/images/dashboard.svg';
@@ -35,7 +35,7 @@ const Bottom = () => {
             ) : (
               <Discount width={25} height={25} />
             );
-          } else if (route.name === 'NotifyScreen') {
+          } else if (route.name === 'NotificationScreen') {
             return focused ? (
               <NotifyFocused width={25} height={25} />
             ) : (
@@ -60,8 +60,8 @@ const Bottom = () => {
         },
       }}>
       <Tab.Screen name="HomeScreen" component={HomeScreen} />
-      <Tab.Screen name="DiscountScreen" component={TestClassScreen} />
-      <Tab.Screen name="NotifyScreen" component={SettingScreen} />
+      <Tab.Screen name="DiscountScreen" component={NotificationScreen} />
+      <Tab.Screen name="NotificationScreen" component={NotificationScreen} />
       <Tab.Screen name="SettingScreen" component={SettingScreen} />
     </Tab.Navigator>
   );

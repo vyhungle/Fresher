@@ -1,36 +1,49 @@
 import {all, call, put, takeLatest} from 'redux-saga/effects';
 
-import {getOrder} from '../../api/orderApi';
+import {getNotification, readNotification} from '../../api/notificationApi';
 import {
-  orderLoadMorePending,
-  orderLoadMoreSuccess,
-  orderPending,
-  orderSuccess,
-} from '../slice/orderSlice';
+  notificationLoadMorePending,
+  notificationLoadMoreSuccess,
+  notificationPending,
+  notificationSuccess,
+  readNotificationPending,
+  readNotificationSuccess,
+} from '../slice/notificationSlice';
 
-function* getOrderSaga(action) {
+function* getNotificationSaga(action) {
   const {payload} = action;
-  const {data} = yield call(getOrder, payload.phone, payload.page);
+  const {data} = yield call(getNotification, payload.phone, payload.page);
   yield put({
-    type: orderSuccess.type,
-    payload: {res: {orders: data}},
+    type: notificationSuccess.type,
+    payload: {res: {notifications: data}},
   });
 }
-function* loadMoreOrderSaga(action) {
+function* loadMoreNotificationSaga(action) {
   const {payload} = action;
-  const {data} = yield call(getOrder, payload.phone, payload.page);
+  const {data} = yield call(getNotification, payload.phone, payload.page);
   yield put({
-    type: orderLoadMoreSuccess.type,
-    payload: {res: {orders: data}},
+    type: notificationLoadMoreSuccess.type,
+    payload: {res: {notifications: data}},
   });
 }
 
-function* workerOrderSaga() {
-  yield takeLatest(orderPending.type, getOrderSaga);
-  yield takeLatest(orderLoadMorePending.type, loadMoreOrderSaga);
+function* readNotificationSaga(action) {
+  const {payload} = action;
+  yield call(
+    readNotification,
+    {...payload.notification, read: true},
+    payload.id,
+  );
+
+  yield put({type: readNotificationSuccess.type, payload: {id: payload.id}});
+}
+function* workerNotificationSaga() {
+  yield takeLatest(notificationPending.type, getNotificationSaga);
+  yield takeLatest(notificationLoadMorePending.type, loadMoreNotificationSaga);
+  yield takeLatest(readNotificationPending.type, readNotificationSaga);
 }
 
-export default function* OrderSaga() {
-  console.log('OrderSaga running');
-  yield all([workerOrderSaga()]);
+export default function* NotificationSaga() {
+  console.log('NotificationSaga running');
+  yield all([workerNotificationSaga()]);
 }

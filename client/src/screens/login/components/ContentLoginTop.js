@@ -10,7 +10,7 @@ export default function ContentLoginTop() {
     <View style={styles.Container}>
       <View style={styles.BoxBottom}>
         <Text style={styles.Title}>Đăng Nhập</Text>
-        <Text style={styles.Hint}>Nhập email và mật khẩu của bạn</Text>
+        {/* <Text style={styles.Hint}>Nhập email và mật khẩu của bạn</Text> */}
       </View>
     </View>
   );

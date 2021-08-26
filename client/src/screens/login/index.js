@@ -7,7 +7,6 @@ import FormLogin from './components/FormLogin';
 export default function index() {
   return (
     <View style={styles.Container}>
-      <ContentLoginTop />
       <FormLogin />
     </View>
   );

@@ -8,3 +8,7 @@ export const getNotification = (phone, page) => {
   );
   return data;
 };
+
+export const readNotification = (notification, id) => {
+  axios.put(`${apiUrl}/notification/1`, notification);
+};
