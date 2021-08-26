@@ -1,26 +1,39 @@
 import React from 'react';
 import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
-import {useSelector} from 'react-redux';
+import {useSelector, useDispatch} from 'react-redux';
 
 import {constantsGlobal} from '../../api/constants';
 import {appFont} from '../../assets/fonts';
 import {appColor} from '../../assets/colors';
 import TopBarMain from '../../components/TopBarMain';
 import FormLogin from './components/FormLogin';
+import {logoutAuth} from '../../redux/slice/authSlice';
+import {deleteAccessAuth} from '../../utils/asyncStore';
 
 export default function Index() {
+  const dispatch = useDispatch();
   const navigation = useNavigation();
   const {isAuth} = useSelector(s => s.auth);
+
+  const logoutPress = () => {
+    dispatch(logoutAuth());
+    deleteAccessAuth();
+  };
   return (
     <View style={styles.Container}>
       <TopBarMain />
       {isAuth ? (
-        <TouchableOpacity
-          onPress={() => navigation.navigate('OrderScreen')}
-          style={styles.ItemBox}>
-          <Text style={styles.ItemText}>My order</Text>
-        </TouchableOpacity>
+        <View style={styles.ContentBox}>
+          <TouchableOpacity onPress={() => logoutPress()}>
+            <Text>Logout</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => navigation.navigate('OrderScreen')}
+            style={styles.ItemBox}>
+            <Text style={styles.ItemText}>My order</Text>
+          </TouchableOpacity>
+        </View>
       ) : (
         <FormLogin />
       )}
@@ -32,6 +45,9 @@ const styles = StyleSheet.create({
   Container: {
     flex: 1,
     backgroundColor: 'white',
+  },
+  ContentBox: {
+    height: constantsGlobal.Height - 100,
   },
   ItemBox: {
     backgroundColor: appColor.primary,

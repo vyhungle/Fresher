@@ -24,8 +24,15 @@ const authSlice = createSlice({
       state.isAuth = true;
       state.phoneNumber = payload.phoneNumber;
     },
+
+    logoutAuth: state => {
+      console.log('logout');
+      state.isAuth = false;
+      state.phoneNumber = '';
+    },
   },
 });
 
-export const {authPending, authSuccess, getAuth} = authSlice.actions;
+export const {authPending, authSuccess, getAuth, logoutAuth} =
+  authSlice.actions;
 export default authSlice.reducer;

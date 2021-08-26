@@ -24,6 +24,14 @@ function* loginSaga(action) {
     type: authSuccess.type,
     payload: {phoneNumber: payload.phoneNumber},
   });
+  yield put({
+    type: orderPending.type,
+    payload: {phone: payload.phoneNumber, page: 1},
+  });
+  yield put({
+    type: notificationPending.type,
+    payload: {phone: payload.phoneNumber, page: 1},
+  });
 }
 
 function* getAuthSaga() {
