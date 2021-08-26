@@ -7,11 +7,13 @@ import messaging from '@react-native-firebase/messaging';
 import App from './App';
 import {name as appName} from './app.json';
 import {store} from './src/redux/store';
+import {setAccessNumberOfNotification} from './src/utils/asyncStore';
 
 LogBox.ignoreLogs(['Remote debugger']);
 
 messaging().setBackgroundMessageHandler(async remoteMessage => {
   console.log('Message handled in the background!', remoteMessage);
+  // let count = parseInt(await setAccessNumberOfNotification(), 10);
 });
 
 const ReduxProvider = () => (

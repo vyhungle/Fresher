@@ -13,7 +13,7 @@ export default function Index() {
       <TopBar />
       <ScrollView showsVerticalScrollIndicator={false}>
         <ListCart cart={cart} />
-        <FooterCart total={cart.total} />
+        <FooterCart total={cart.total} cart={cart} />
       </ScrollView>
     </View>
   );

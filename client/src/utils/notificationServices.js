@@ -1,5 +1,5 @@
 import messaging from '@react-native-firebase/messaging';
-import {getFcmToken} from './asyncStore';
+import {getAccessNumberOfNotification, getFcmToken} from './asyncStore';
 import * as RootNavigation from '../navigation/rootNavigation';
 
 export async function requestUserPermission() {
@@ -14,18 +14,21 @@ export async function requestUserPermission() {
   }
 }
 
-export const notificationListener = navigation => {
+export const notificationListener = () => {
   messaging().onNotificationOpenedApp(remoteMessage => {
     console.log(
       'Notification caused app to open from background state:',
       remoteMessage.notification,
     );
-    RootNavigation.navigate(remoteMessage.data.navigate);
+    RootNavigation.navigateRoute(remoteMessage.data.navigate, {
+      id: remoteMessage.data.id,
+    });
   });
 
   messaging().onMessage(async remoteMessage => {
     console.log('received in foreground', remoteMessage);
     // await setCountNotification();
+    console.log(await getAccessNumberOfNotification());
   });
 
   messaging()

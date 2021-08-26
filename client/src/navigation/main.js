@@ -12,6 +12,8 @@ import RegisterScreen from '../screens/register';
 import DetailScreen from '../screens/detail';
 import CartScreen from '../screens/cart';
 import LocationScreen from '../screens/location';
+import OrderScreen from '../screens/order';
+import OrderDetailScreen from '../screens/order/detail';
 
 export default function AppNavigator() {
   const RootStack = createStackNavigator();
@@ -28,6 +30,11 @@ export default function AppNavigator() {
         <RootStack.Screen name="DetailScreen" component={DetailScreen} />
         <RootStack.Screen name="CartScreen" component={CartScreen} />
         <RootStack.Screen name="LocationScreen" component={LocationScreen} />
+        <RootStack.Screen name="OrderScreen" component={OrderScreen} />
+        <RootStack.Screen
+          name="OrderDetailScreen"
+          component={OrderDetailScreen}
+        />
       </RootStack.Navigator>
     </NavigationContainer>
   );

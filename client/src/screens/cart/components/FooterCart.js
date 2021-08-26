@@ -1,11 +1,31 @@
 import React from 'react';
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {useDispatch} from 'react-redux';
+import {useNavigation} from '@react-navigation/native';
+
 import {constantsGlobal} from '../../../api/constants';
 import {appColor} from '../../../assets/colors';
 import {appFont} from '../../../assets/fonts';
+import {addOrderPending} from '../../../redux/slice/orderSlice';
 import {moneyFormat} from '../../../utils/format';
 
 export default function FooterCart(props) {
+  const {products, total, unit, number} = props.cart;
+  const dispatch = useDispatch();
+  const navigation = useNavigation();
+  const orderPress = () => {
+    dispatch(
+      addOrderPending({
+        products,
+        unit,
+        number,
+        total,
+        phoneNumber: '0983782942',
+      }),
+    );
+    navigation.navigate('OrderScreen');
+  };
+
   return (
     <View style={styles.Container}>
       <View style={styles.BodyBox}>
@@ -31,7 +51,9 @@ export default function FooterCart(props) {
         <TouchableOpacity style={styles.ButtonItemBox}>
           <Text style={styles.ButtonText}>Dùng phiếu mua hàng</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.ButtonItemBoxDH}>
+        <TouchableOpacity
+          style={styles.ButtonItemBoxDH}
+          onPress={() => orderPress()}>
           <Text style={styles.ButtonTextDH}>Đặt hàng</Text>
         </TouchableOpacity>
       </View>

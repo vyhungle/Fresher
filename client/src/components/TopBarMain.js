@@ -63,9 +63,11 @@ export default function TopBarMain() {
       <TouchableOpacity
         style={styles.BoxCart}
         onPress={() => navigation.navigate('CartScreen')}>
-        <View style={styles.BadgeBox}>
-          <Text style={styles.BadgeText}>{number}</Text>
-        </View>
+        {number > 0 && (
+          <View style={styles.BadgeBox}>
+            <Text style={styles.BadgeText}>{number}</Text>
+          </View>
+        )}
         <CartIcon width={20} height={20} />
         <Text style={styles.CartText}>Giỏ hàng</Text>
       </TouchableOpacity>
