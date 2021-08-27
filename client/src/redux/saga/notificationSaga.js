@@ -29,11 +29,13 @@ function* loadMoreNotificationSaga(action) {
 
 function* readNotificationSaga(action) {
   const {payload} = action;
-  yield call(
-    readNotification,
-    {...payload.notification, read: true},
-    payload.id,
-  );
+  if (payload.id !== undefined) {
+    yield call(
+      readNotification,
+      {...payload.notification, read: true},
+      payload.id,
+    );
+  }
 
   yield put({type: readNotificationSuccess.type, payload: {id: payload.id}});
 }

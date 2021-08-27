@@ -13,7 +13,7 @@ export default function SingleNotification({item}) {
   const dispatch = useDispatch();
   const notificationOnPress = () => {
     navigation.navigate('OrderDetailScreen', {id: item.orderId});
-    if (item.read === false) {
+    if (item.read === false || item.read === 'false') {
       dispatch(readNotificationPending({notification: item, id: item.id}));
     }
   };
@@ -24,7 +24,9 @@ export default function SingleNotification({item}) {
       onPress={() => notificationOnPress()}>
       <Text style={styles.Title}>Mã đơn hàng: #{item.orderId}</Text>
       <Text style={styles.Body}>{item.body}, kiểm tra nào.</Text>
-      {!item.read && <View style={styles.StatusBox}></View>}
+      {(!item.read || item.read === 'false') && (
+        <View style={styles.StatusBox}></View>
+      )}
     </TouchableOpacity>
   );
 }

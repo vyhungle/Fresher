@@ -4,6 +4,7 @@ const initialState = {
   isLoading: true,
   isSubLoading: false,
   notifications: [],
+  notificationNumber: 0,
 };
 
 const notificationSlice = createSlice({
@@ -16,6 +17,12 @@ const notificationSlice = createSlice({
     notificationSuccess: (state, {payload}) => {
       state.isLoading = false;
       state.notifications = payload.res.notifications;
+
+      for (let a of state.notifications) {
+        if (a.read === false) {
+          state.notificationNumber += 1;
+        }
+      }
     },
 
     notificationLoadMorePending: state => {
@@ -26,10 +33,16 @@ const notificationSlice = createSlice({
       state.notifications = state.notifications.concat(
         payload.res.notifications,
       );
+      for (let a of state.notifications) {
+        if (a.read === false) {
+          state.notificationNumber += 1;
+        }
+      }
     },
 
     addNotification: (state, {payload}) => {
       state.notifications.unshift(payload.res);
+      state.notificationNumber += 1;
     },
 
     readNotificationPending: state => {},
@@ -40,6 +53,7 @@ const notificationSlice = createSlice({
         console.log(state.notifications[index].read);
         state.notifications[index].read = true;
       }
+      state.notificationNumber -= 1;
     },
   },
 });

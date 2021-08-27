@@ -1,6 +1,7 @@
 import React from 'react';
 import {StyleSheet} from 'react-native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import {useSelector} from 'react-redux';
 
 import {appColor} from '../assets/colors';
 import HomeScreen from '../screens/home';
@@ -16,9 +17,11 @@ import Notify from '../assets/images/bell.svg';
 import NotifyFocused from '../assets/images/bellFocused.svg';
 import UserIcon from '../assets/images/user.svg';
 import UserIconFocused from '../assets/images/userFocused.svg';
+import {appFont} from '../assets/fonts';
 
 const Bottom = () => {
   const Tab = createBottomTabNavigator();
+  const {notificationNumber} = useSelector(s => s.notification);
   return (
     <Tab.Navigator
       screenOptions={({route}) => ({
@@ -61,7 +64,23 @@ const Bottom = () => {
       }}>
       <Tab.Screen name="HomeScreen" component={HomeScreen} />
       <Tab.Screen name="DiscountScreen" component={NotificationScreen} />
-      <Tab.Screen name="NotificationScreen" component={NotificationScreen} />
+      <Tab.Screen
+        name="NotificationScreen"
+        component={NotificationScreen}
+        options={{
+          tabBarBadge: notificationNumber,
+          tabBarBadgeStyle: {
+            position: 'absolute',
+            top: 10,
+            left: 10,
+            fontFamily: appFont.Medium,
+            fontSize: 12,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          },
+        }}
+      />
       <Tab.Screen name="SettingScreen" component={SettingScreen} />
     </Tab.Navigator>
   );
