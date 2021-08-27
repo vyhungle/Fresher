@@ -50,6 +50,117 @@
         }
       ],
       "status": 0
+    },
+    {
+      "products": [
+        {
+          "product": {
+            "id": 1,
+            "name": "Thịt gà kho sả ớt khay 390g",
+            "images": [
+              "https://cdn.tgdd.vn/Products/Images/8791/238286/bhx/thit-ga-kho-sa-ot-khay-390g-202107011131133251.jpg",
+              "https://cdn.tgdd.vn/Products/Images/8791/238286/bhx/thit-ga-kho-sa-ot-khay-390g-202107011131136376.jpg",
+              "https://cdn.tgdd.vn/Products/Images/8791/238286/bhx/thit-ga-kho-sa-ot-khay-390g-202107011131140014.jpg",
+              "https://cdn.tgdd.vn/Products/Images/8791/238286/bhx/thit-ga-kho-sa-ot-khay-390g-202107011131143452.jpg"
+            ],
+            "detail": "Thịt gà kho sả ớt được đóng khay sạch sẽ - đảm bảo vệ sinh an toàn thực phẩm. Sản phẩm đã có đầy đủ nguyên liệu tươi, được đóng gói riêng biệt, dễ dàng gia giảm nguyên liệu theo khẩu vị riêng. Phục vụ tốt cho gia đình bạn có món ngon trọn dinh dưỡng",
+            "hsd": "HSD còn 4 tháng",
+            "unit": {
+              "many": false,
+              "detail": [
+                {
+                  "id": 1,
+                  "name": "khay 390g",
+                  "price": 42000,
+                  "image": "https://cdn.tgdd.vn/Products/Images/8791/238286/bhx/thit-ga-kho-sa-ot-khay-390g-202107011131133251.jpg"
+                }
+              ]
+            },
+            "subCategoryId": 1,
+            "categoryId": 1
+          },
+          "unit": {
+            "id": 1,
+            "name": "khay 390g",
+            "price": 42000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8791/238286/bhx/thit-ga-kho-sa-ot-khay-390g-202107011131133251.jpg"
+          },
+          "number": 1
+        },
+        {
+          "product": {
+            "id": 2,
+            "name": "Cá một nắng Basamaster gói 500g",
+            "images": [
+              "https://cdn.tgdd.vn/Products/Images/7259/244901/bhx/ca-mot-nang-basamaster-goi-500g-202107051003094082.jpg",
+              "https://cdn.tgdd.vn/Products/Images/7259/244901/bhx/ca-mot-nang-basamaster-goi-500g-202108091052599981.jpg"
+            ],
+            "detail": "với thịt cá săn chắc tạo nên miếng khô cá đẹp và lóng lánh, hấp dẫn. Cá một nắng Basamaster gói 500g là loại thực phẩm làm sẵn cao cấp của thương hiệu thực phẩm Basamaster, đáp ứng cả các tiêu chuẩn quản lý chất lượng quốc tế và giúp người dùng chế biến nhanh chóng nhưng cung cấp đầy đủ dinh dưỡng.",
+            "hsd": "HSD còn 8 tháng",
+            "unit": {
+              "many": false,
+              "detail": [
+                {
+                  "id": 1,
+                  "name": "gói 500g",
+                  "price": 132000,
+                  "image": "https://cdn.tgdd.vn/Products/Images/7259/244901/bhx/ca-mot-nang-basamaster-goi-500g-202108091052599981.jpg"
+                }
+              ]
+            },
+            "subCategoryId": 1,
+            "categoryId": 1
+          },
+          "unit": {
+            "id": 1,
+            "name": "gói 500g",
+            "price": 132000,
+            "image": "https://cdn.tgdd.vn/Products/Images/7259/244901/bhx/ca-mot-nang-basamaster-goi-500g-202108091052599981.jpg"
+          },
+          "number": 1
+        },
+        {
+          "product": {
+            "id": 3,
+            "name": "Cá hồi xốt Teriyaki Meiwa hộp 310g",
+            "images": [
+              "https://cdn.tgdd.vn/Products/Images/7259/244661/bhx/ca-hoi-xot-teriyaki-meiwa-hop-310g-202107151412365039.jpg",
+              "https://cdn.tgdd.vn/Products/Images/7259/244661/bhx/ca-hoi-xot-teriyaki-meiwa-hop-310g-202107151412371602.jpg",
+              "https://cdn.tgdd.vn/Products/Images/7259/244661/bhx/ca-hoi-xot-teriyaki-meiwa-hop-310g-202107151412376510.jpg",
+              "https://cdn.tgdd.vn/Products/Images/7259/244661/bhx/ca-hoi-xot-teriyaki-meiwa-hop-310g-202107151412382702.jpg",
+              "https://cdn.tgdd.vn/Products/Images/7259/244661/bhx/ca-hoi-xot-teriyaki-meiwa-hop-310g-202107151412389594.jpg",
+              "https://cdn.tgdd.vn/Products/Images/7259/244661/bhx/ca-hoi-xot-teriyaki-meiwa-hop-310g-202107151412399301.jpg"
+            ],
+            "detail": "Với nguyên liệu cá hồi Nhật cùng nước xốt Teriyakki đặc trựng của xứ Phù Tang. Cá hồi xốt Teriyaki Meiwa 310g đến từ thương hiệu thực phẩm Meiwa mang đến hương vị đặc trưng của Nhật Bản được xem là loại thực phẩm làm sẵn tiện lợi và cung cấp nguồn năng lượng dồi dào.",
+            "hsd": "HSD còn 1 năm",
+            "unit": {
+              "many": false,
+              "detail": [
+                {
+                  "id": 1,
+                  "name": "hộp 310g",
+                  "price": 120000,
+                  "image": "https://cdn.tgdd.vn/Products/Images/7259/244661/bhx/ca-hoi-xot-teriyaki-meiwa-hop-310g-202107151412399301.jpg"
+                }
+              ]
+            },
+            "subCategoryId": 1,
+            "categoryId": 1
+          },
+          "unit": {
+            "id": 1,
+            "name": "hộp 310g",
+            "price": 120000,
+            "image": "https://cdn.tgdd.vn/Products/Images/7259/244661/bhx/ca-hoi-xot-teriyaki-meiwa-hop-310g-202107151412399301.jpg"
+          },
+          "number": 1
+        }
+      ],
+      "number": 3,
+      "total": 294000,
+      "phoneNumber": "0983782942",
+      "status": 1,
+      "id": 3
     }
   ],
   "notification": [
@@ -59,19 +170,63 @@
       "orderId": 1,
       "body": "Đơn hàng của bạn đã được xác nhận, đơn hàng sẽ được giao trong vòng vài giời tới",
       "read": false
+    },
+    {
+      "phoneNumber": "0983782942",
+      "orderId": 1,
+      "body": "Đơn hàng của bạn đã được xác nhận, đơn hàng sẽ được giao trong vòng vài giời tới",
+      "read": false,
+      "id": 2
+    },
+    {
+      "phoneNumber": "0983782942",
+      "orderId": 3,
+      "body": "Đơn hàng của bạn đã được xác nhận, đơn hàng sẽ được giao trong vòng vài giời tới",
+      "read": false,
+      "id": 3
     }
   ],
   "categories": [
-    { "id": 1, "name": "Thịt, cá, trứng rau" },
-    { "id": 2, "name": "Đồ uống các loại" },
-    { "id": 3, "name": "Sữa uống các loại" },
-    { "id": 4, "name": "Bánh kẹo các loại" },
-    { "id": 5, "name": "Mì, cháo, phở, bún" },
-    { "id": 6, "name": "Dầu ăn, gia vị" },
-    { "id": 7, "name": "Gạo, bột, đồ khô" },
-    { "id": 8, "name": "Đồ mát, đông lạnh" },
-    { "id": 9, "name": "Tả, đồ cho bé" },
-    { "id": 10, "name": "Chăm sóc cá nhân" }
+    {
+      "id": 1,
+      "name": "Thịt, cá, trứng rau"
+    },
+    {
+      "id": 2,
+      "name": "Đồ uống các loại"
+    },
+    {
+      "id": 3,
+      "name": "Sữa uống các loại"
+    },
+    {
+      "id": 4,
+      "name": "Bánh kẹo các loại"
+    },
+    {
+      "id": 5,
+      "name": "Mì, cháo, phở, bún"
+    },
+    {
+      "id": 6,
+      "name": "Dầu ăn, gia vị"
+    },
+    {
+      "id": 7,
+      "name": "Gạo, bột, đồ khô"
+    },
+    {
+      "id": 8,
+      "name": "Đồ mát, đông lạnh"
+    },
+    {
+      "id": 9,
+      "name": "Tả, đồ cho bé"
+    },
+    {
+      "id": 10,
+      "name": "Chăm sóc cá nhân"
+    }
   ],
   "subCategories": [
     {
@@ -469,7 +624,6 @@
       "subCategoryId": 1,
       "categoryId": 1
     },
-
     {
       "id": 14,
       "name": "Thùng 24 chai hồng trà vải C2 455ml",
@@ -584,7 +738,6 @@
       "subCategoryId": 3,
       "categoryId": 2
     },
-
     {
       "id": 17,
       "name": "Thùng 48 hộp sữa tươi tiệt trùng có đường Dutch Lady 180ml",
@@ -684,7 +837,6 @@
       "subCategoryId": 9,
       "categoryId": 3
     },
-
     {
       "id": 20,
       "name": "Cá hồi xốt Teriyaki Meiwa hộp 310g",
@@ -864,7 +1016,6 @@
       "subCategoryId": 2,
       "categoryId": 4
     },
-
     {
       "id": 27,
       "name": "Thùng 24 chai hồng trà vải C2 455ml",
@@ -941,7 +1092,6 @@
       "subCategoryId": 3,
       "categoryId": 5
     },
-
     {
       "id": 29,
       "name": "Thùng 48 hộp sữa tươi tiệt trùng có đường Dutch Lady 180ml",
@@ -975,7 +1125,6 @@
       "subCategoryId": 9,
       "categoryId": 5
     },
-
     {
       "id": 30,
       "name": "Thùng 24 chai hồng trà vải C2 455ml",
@@ -1052,7 +1201,6 @@
       "subCategoryId": 3,
       "categoryId": 6
     },
-
     {
       "id": 30,
       "name": "Thùng 48 hộp sữa tươi tiệt trùng có đường Dutch Lady 180ml",
@@ -1086,7 +1234,6 @@
       "subCategoryId": 9,
       "categoryId": 6
     },
-
     {
       "id": 31,
       "name": "Thùng 24 chai hồng trà vải C2 455ml",
@@ -1163,7 +1310,6 @@
       "subCategoryId": 3,
       "categoryId": 7
     },
-
     {
       "id": 33,
       "name": "Thùng 48 hộp sữa tươi tiệt trùng có đường Dutch Lady 180ml",
@@ -1197,7 +1343,6 @@
       "subCategoryId": 9,
       "categoryId": 7
     },
-
     {
       "id": 34,
       "name": "Thùng 24 chai hồng trà vải C2 455ml",
@@ -1274,7 +1419,6 @@
       "subCategoryId": 3,
       "categoryId": 8
     },
-
     {
       "id": 36,
       "name": "Thùng 48 hộp sữa tươi tiệt trùng có đường Dutch Lady 180ml",
@@ -1308,7 +1452,6 @@
       "subCategoryId": 9,
       "categoryId": 8
     },
-
     {
       "id": 37,
       "name": "Thùng 24 chai hồng trà vải C2 455ml",
@@ -1385,7 +1528,6 @@
       "subCategoryId": 3,
       "categoryId": 9
     },
-
     {
       "id": 39,
       "name": "Thùng 48 hộp sữa tươi tiệt trùng có đường Dutch Lady 180ml",
@@ -1419,7 +1561,6 @@
       "subCategoryId": 9,
       "categoryId": 9
     },
-
     {
       "id": 40,
       "name": "Thùng 24 chai hồng trà vải C2 455ml",
@@ -1496,7 +1637,6 @@
       "subCategoryId": 3,
       "categoryId": 10
     },
-
     {
       "id": 42,
       "name": "Thùng 48 hộp sữa tươi tiệt trùng có đường Dutch Lady 180ml",
