@@ -47,13 +47,19 @@ const notificationSlice = createSlice({
 
     readNotificationPending: state => {},
     readNotificationSuccess: (state, {payload}) => {
-      const index = state.notifications.findIndex(x => x.id === payload.id);
-
-      if (index !== -1) {
-        console.log(state.notifications[index].read);
-        state.notifications[index].read = true;
+      const listIndex = [];
+      for (let i = 0; i < state.notifications.length; i++) {
+        if (
+          state.notifications[i].orderId === payload.orderId &&
+          state.notifications[i].read === false
+        ) {
+          listIndex.push(i);
+        }
       }
-      state.notificationNumber -= 1;
+      for (let item of listIndex) {
+        state.notifications[item].read = true;
+      }
+      state.notificationNumber -= listIndex.length;
     },
   },
 });

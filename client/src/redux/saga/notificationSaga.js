@@ -29,15 +29,16 @@ function* loadMoreNotificationSaga(action) {
 
 function* readNotificationSaga(action) {
   const {payload} = action;
-  if (payload.id !== undefined) {
-    yield call(
-      readNotification,
-      {...payload.notification, read: true},
-      payload.id,
-    );
+  const {id, orderId} = payload.notification;
+  console.log(id, orderId);
+  if (id !== undefined) {
+    yield call(readNotification, {...payload.notification, read: true}, id);
   }
 
-  yield put({type: readNotificationSuccess.type, payload: {id: payload.id}});
+  yield put({
+    type: readNotificationSuccess.type,
+    payload: {orderId: orderId},
+  });
 }
 function* workerNotificationSaga() {
   yield takeLatest(notificationPending.type, getNotificationSaga);

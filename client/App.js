@@ -8,7 +8,9 @@ import {
 } from './src/utils/notificationServices';
 
 function App() {
+  
   const dispatch = useDispatch();
+
   React.useEffect(() => {
     requestUserPermission();
     notificationListener(dispatch);

@@ -2,7 +2,10 @@ import messaging from '@react-native-firebase/messaging';
 import {getAccessNumberOfNotification, getFcmToken} from './asyncStore';
 import * as RootNavigation from '../navigation/rootNavigation';
 
-import {addNotification} from '../redux/slice/notificationSlice';
+import {
+  addNotification,
+  readNotificationPending,
+} from '../redux/slice/notificationSlice';
 
 export async function requestUserPermission() {
   const authStatus = await messaging().requestPermission();
@@ -22,6 +25,15 @@ export const notificationListener = dispatch => {
       'Notification caused app to open from background state:',
       remoteMessage.notification,
     );
+
+    const {phoneNumber, id} = remoteMessage.data;
+    const {body} = remoteMessage.notification;
+    dispatch(
+      readNotificationPending({
+        notification: {phoneNumber, orderId: id, body, read: false},
+      }),
+    );
+
     RootNavigation.navigateRoute(remoteMessage.data.navigate, {
       id: remoteMessage.data.id,
     });
@@ -31,7 +43,8 @@ export const notificationListener = dispatch => {
     console.log('received in foreground', remoteMessage);
     // await setCountNotification();
     console.log(await getAccessNumberOfNotification());
-    const {phoneNumber, id, read} = remoteMessage.data;
+
+    const {phoneNumber, id} = remoteMessage.data;
     const {body} = remoteMessage.notification;
     dispatch(
       addNotification({
@@ -39,7 +52,7 @@ export const notificationListener = dispatch => {
           phoneNumber,
           orderId: id,
           body,
-          read,
+          read: false,
         },
       }),
     );

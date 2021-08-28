@@ -14,7 +14,7 @@ export default function SingleNotification({item}) {
   const notificationOnPress = () => {
     navigation.navigate('OrderDetailScreen', {id: item.orderId});
     if (item.read === false || item.read === 'false') {
-      dispatch(readNotificationPending({notification: item, id: item.id}));
+      dispatch(readNotificationPending({notification: item}));
     }
   };
 

@@ -7,6 +7,7 @@ import {appColor} from '../assets/colors';
 import HomeScreen from '../screens/home';
 import SettingScreen from '../screens/setting';
 import NotificationScreen from '../screens/notification';
+import TestScreen from '../screens/test/testPushNotification';
 
 //icon
 import DashboardIcon from '../assets/images/dashboard.svg';
@@ -63,7 +64,7 @@ const Bottom = () => {
         },
       }}>
       <Tab.Screen name="HomeScreen" component={HomeScreen} />
-      <Tab.Screen name="DiscountScreen" component={NotificationScreen} />
+      <Tab.Screen name="DiscountScreen" component={TestScreen} />
       <Tab.Screen
         name="NotificationScreen"
         component={NotificationScreen}
