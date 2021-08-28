@@ -1,5 +1,5 @@
 import React from "react";
-import { useMutation, useQuery } from "react-query";
+import { useQuery } from "react-query";
 import { getOrder } from "../api/OrderApi";
 import SingleOrder from "./SingleOrder";
 
