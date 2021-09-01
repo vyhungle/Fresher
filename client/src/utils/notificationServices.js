@@ -66,6 +66,9 @@ export const notificationListener = dispatch => {
           'Notification caused app to open from quit state:',
           remoteMessage.notification,
         );
+        RootNavigation.navigateRoute(remoteMessage.data.navigate, {
+          id: remoteMessage.data.id,
+        });
       }
     });
 };

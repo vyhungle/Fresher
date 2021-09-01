@@ -30,7 +30,6 @@ function* loadMoreNotificationSaga(action) {
 function* readNotificationSaga(action) {
   const {payload} = action;
   const {id, orderId} = payload.notification;
-  console.log(id, orderId);
   if (id !== undefined) {
     yield call(readNotification, {...payload.notification, read: true}, id);
   }

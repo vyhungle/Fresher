@@ -50,7 +50,8 @@ const notificationSlice = createSlice({
       const listIndex = [];
       for (let i = 0; i < state.notifications.length; i++) {
         if (
-          state.notifications[i].orderId === payload.orderId &&
+          state.notifications[i].orderId.toString() ===
+            payload.orderId.toString() &&
           state.notifications[i].read === false
         ) {
           listIndex.push(i);

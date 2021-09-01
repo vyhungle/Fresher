@@ -9,7 +9,7 @@ import {appColor} from '../../assets/colors';
 import TopBarMain from '../../components/TopBarMain';
 import FormLogin from './components/FormLogin';
 import {logoutAuth} from '../../redux/slice/authSlice';
-import {deleteAccessAuth} from '../../utils/asyncStore';
+import {deleteAccessAuth, deleteAccessFcmToken} from '../../utils/asyncStore';
 
 export default function Index() {
   const dispatch = useDispatch();
@@ -28,6 +28,10 @@ export default function Index() {
           <TouchableOpacity onPress={() => logoutPress()}>
             <Text>Logout</Text>
           </TouchableOpacity>
+          {/* <TouchableOpacity onPress={() => deleteAccessFcmToken()}>
+            <Text>clear fcm token</Text>
+          </TouchableOpacity> */}
+
           <TouchableOpacity
             onPress={() => navigation.navigate('OrderScreen')}
             style={styles.ItemBox}>

@@ -64,7 +64,6 @@ const productsSlice = createSlice({
     },
 
     changeSelectIndex: (state, {payload}) => {
-      console.log(payload);
       state.selectIndex = payload.index;
     },
   },

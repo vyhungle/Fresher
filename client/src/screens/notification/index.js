@@ -1,5 +1,6 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
+import {appColor} from '../../assets/colors';
 import TopBar from '../../components/TopBarMain';
 
 import ListNotification from './components/ListNotification';
@@ -14,5 +15,5 @@ export default function Index() {
 }
 
 const styles = StyleSheet.create({
-  Container: {flex: 1, backgroundColor: 'white'},
+  Container: {flex: 1, backgroundColor: appColor.bg},
 });

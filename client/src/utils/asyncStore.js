@@ -39,6 +39,10 @@ export const getFcmToken = async token => {
   }
 };
 
+export const deleteAccessFcmToken = async () => {
+  AsyncStorage.removeItem('fcmToken');
+};
+
 export const setAccessNumberOfNotification = async () => {
   await AsyncStorage.setItem('numberOfNotification', 1 + '');
 };

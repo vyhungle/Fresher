@@ -15,6 +15,7 @@ export default function ListNotification() {
       data={notifications}
       keyExtractor={(item, index) => index}
       renderItem={({item}) => <SingleNotification item={item} />}
+      contentContainerStyle={{padding: 10}}
     />
   );
 }
